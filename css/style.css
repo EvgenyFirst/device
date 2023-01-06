@@ -1,0 +1,96 @@
+:root {
+  --black-color: #000000;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 400;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("OpenSansBold"), url("../fonts/Open-Sans/static/OpenSans/OpenSans-Bold.ttf") format("ttf");
+  src: local("OpenSansBoldItalic"), url("../fonts/Open-Sans/static/OpenSans/OpenSans-BoldItalic.ttf") format("ttf");
+  src: local("OpenSansItalic"), url("../fonts/Open-Sans/static/OpenSans/OpenSans-Italic.ttf") format("ttf");
+  src: local("OpenSansLight"), url("../fonts/Open-Sans/static/OpenSans/OpenSans-Light.ttf") format("ttf");
+  src: local("OpenSansLightItalic"), url("../fonts/Open-Sans/static/OpenSans/OpenSans-LightItalic.ttf") format("ttf");
+  src: local("OpenSansMedium"), url("../fonts/Open-Sans/static/OpenSans/OpenSans-Medium.ttf") format("ttf");
+  src: local("OpenSansMediumItalic"), url("../fonts/Open-Sans/static/OpenSans/OpenSans-MediumItalic.ttf") format("ttf");
+  src: local("OpenSansRegular"), url("../fonts/Open-Sans/static/OpenSans/OpenSans-Regular.ttf") format("ttf");
+  src: local("OpenSansSemiBold"), url("../fonts/Open-Sans/static/OpenSans/OpenSans-SemiBold.ttf") format("ttf");
+  src: local("OpenSansSemiBoldItalic"), url("../fonts/Open-Sans/static/OpenSans/OpenSans-SemiBoldItalic.ttf") format("ttf");
+}
+
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("OpenSansBold"), url("../fonts/Montserrat/static/Montserrat-Black.ttf") format("ttf");
+  src: local("OpenSansBoldItalic"), url("../fonts/Montserrats/static/Montserrat-BlackItalic.ttf") format("ttf");
+  src: local("OpenSansItalic"), url("../fonts/OMontserrat/static/Montserrat-Bold.ttf") format("ttf");
+  src: local("OpenSansLight"), url("../fonts/Montserrat/static/Montserrat-BoldItalic.ttf") format("ttf");
+  src: local("OpenSansLightItalic"), url("../fonts/Montserrat/static/Montserrat-ExtraBold.ttf") format("ttf");
+  src: local("OpenSansMedium"), url("../fonts/Montserrat/static/Montserrat-ExtraBoldItalic.ttf") format("ttf");
+  src: local("OpenSansMediumItalic"), url("../fonts/Montserratstatic/Montserrat-ExtraLight.ttf") format("ttf");
+  src: local("OpenSansRegular"), url("../fonts/Montserrat/static/Montserrat-ExtraLightItalic.ttf") format("ttf");
+  src: local("OpenSansSemiBold"), url("../fonts/Montserrat/static//Montserrat-Italic.ttf") format("ttf");
+  src: local("OpenSansSemiBoldItalic"), url("../fonts/Montserrat/static/Montserrat-Light.ttf") format("ttf");
+  src: local("OpenSansSemiBoldItalic"), url("../fonts/Montserratstatic/Montserrat-LightItalic.ttf") format("ttf");
+  src: local("OpenSansSemiBoldItalic"), url("../fonts/Montserrat/static/Montserrat-Medium.ttf") format("ttf");
+  src: local("OpenSansSemiBoldItalic"), url("../fonts/Montserrat/static/Montserrat-MediumItalic.ttf") format("ttf");
+  src: local("OpenSansSemiBoldItalic"), url("../fonts/Montserrat/static/Montserrat-Regular.ttf") format("ttf");
+  src: local("OpenSansSemiBoldItalic"), url("../fonts/Montserrat/static/Montserrat-SemiBold.ttf") format("ttf");
+  src: local("OpenSansSemiBoldItalic"), url("../fonts/Montserrat/static/Montserrat-SemiBoldItalic.ttf") format("ttf");
+  src: local("OpenSansSemiBoldItalic"), url("../fonts/Montserrat/static/Montserrat-Thin.ttf") format("ttf");
+  src: local("OpenSansSemiBoldItalic"), url("../fonts/Montserrat/static/ontserrat-ThinItalic.ttf") format("ttf");
+}
+
+html {
+  box-sizing: border-box;
+
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+  position: relative;
+
+  font-family: "OpenSans", "Ar1al", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: var(--black-color);
+
+  scroll-behavior: smooth;
+
+  /*
+  background-image: url("../screens/Index.jpg");
+  background-position-x: center;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+
+  background-image: url("../screens/catalog.jpg");
+  background-position-x: center;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+
+  background-image: url("../screens/popup.jpg");
+  background-position-x: center;
+  background-repeat: no-repeat;
+  opacity:0.5;
+
+  padding: 0 calc(17px - (100vw - 100%)) 0 0;
+  margin-right: calc(-1 * (100vw - 100%));
+  */
+}
+
+body {
+  display: grid;
+
+  width: 100%;
+  max-width: 1440px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  margin: 0 auto;
+}
