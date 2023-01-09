@@ -1,5 +1,6 @@
 :root {
   --black-color: #000000;
+  --special-yellow: #f7e296;
 }
 
 @font-face {
@@ -16,9 +17,9 @@
   src: local("OpenSansMediumItalic"), url("../fonts/Open-Sans/static/OpenSans/OpenSans-MediumItalic.ttf") format("ttf");
   src: local("OpenSansRegular"), url("../fonts/Open-Sans/static/OpenSans/OpenSans-Regular.ttf") format("ttf");
   src: local("OpenSansSemiBold"), url("../fonts/Open-Sans/static/OpenSans/OpenSans-SemiBold.ttf") format("ttf");
-  src: local("OpenSansSemiBoldItalic"), url("../fonts/Open-Sans/static/OpenSans/OpenSans-SemiBoldItalic.ttf") format("ttf");
+  src: local("OpenSansSemiBoldItalic"),
+    url("../fonts/Open-Sans/static/OpenSans/OpenSans-SemiBoldItalic.ttf") format("ttf");
 }
-
 
 @font-face {
   font-family: "Montserrat";
@@ -93,4 +94,32 @@ body {
   flex-direction: column;
 
   margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+
+  margin-top: 20px;
+
+  position: relative;
+  z-index: 1;
+}
+
+.header__link {
+  margin-left: 60px;
+}
+
+.header__container {
+  min-height: 300px;
+
+  margin-top: -20px;
+
+  padding-top: 44px;
+  padding-left: 60px;
+
+  background-color: var(--special-yellow);
+}
+
+.header__container-catalog {
+  min-height: 186px;
 }
