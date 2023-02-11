@@ -21,112 +21,125 @@
     <!--  -->
     <header class="header">
       <a class="header__link">
-        <img src="/img/logo.svg" width="163" height="35" alt="Логотип Device">
+        <img src="img/logo.svg" width="163" height="35" alt="Логотип Device">
       </a>
       <div class="header__container">
-        <nav>
+        <nav class="header__container-inner">
           <div>
-            <form action="/">
-              <button type="submit">
-                Поиск по сайту
+            <form class="header__container-form" action="/">
+              <button class="header__container-form-btn" type="submit">
+                <img src="/img/icon_search.svg" width="16" height="16"
+                  alt="Иконка поиска">
+                <span>Поиск по сайту</span>
               </button>
-              <input type="search" id="find-in-site" placeholder="Поиск по
-                сайту">
+              <input class="header__container-input" type="search"
+                id="find-in-site" placeholder="Поиск по сайту">
               <label for="find-in-site"></label>
             </form>
           </div>
-          <div>
+          <div class="header__container-right">
             <div>
-              <a>
-                <img src="#" alt="Иконка входа">
+              <a href="#" class="header__container-login
+                header__container-right-nav">
+                <img src="img/icon_user.svg" width="13" height="14" alt="Иконка
+                  входа">
                 Войти
               </a>
             </div>
-            <div>
-              <button type="button">
-                <img src="#" alt="Иконка сравнения">
+            <div class="header__container-right-inner
+              header__container-right-nav">
+              <button class="header__container-btn-set" type="button">
+                <img src="img/icon_settings.svg" width="10" height="10"
+                  alt="Иконка сравнения">
                 Сравнить
               </button>
-              <a>
-                <img src="#" alt="Иконка корзины">
+              <a href="#" class="header__container-basket
+                header__container-right-nav">
+                <img src="img/icon_basket.svg" width="10" height="10"
+                  alt="Иконка корзины">
                 Корзина
               </a>
             </div>
           </div>
         </nav>
-        <nav>
-          <div>
-            <a href="catalog.html">
-              каталог товаров
-              <img src="#" alt="Символ плюс">
-            </a>
-          </div>
-          <div>
+        <nav class="header__container-inner-bottom">
+          <a class="header__container-inner-bottom-link" href="catalog.html">
+            каталог товаров
+            <img class="header__container-inner-bottom-link-plus"
+              src="img/icon_plus.svg" width="22" height="22" alt="Символ плюс">
+          </a>
+          <div class="header__container-inner-bottom-ul">
             <ul>
               <li>
-                <a href="blank.html">
+                <a class="header__container-inner-bottom-link"
+                  href="blank.html">
                   доставка
                 </a>
               </li>
               <li>
-                <a href="blank.html">
+                <a class="header__container-inner-bottom-link"
+                  href="blank.html">
                   гарантия
                 </a>
               </li>
             </ul>
-            <a href="blank.html">
+            <a class="header__container-inner-bottom-link" href="blank.html">
               контакты
             </a>
           </div>
         </nav>
       </div>
       <!-- Slider start -->
-      <article>
+      <article class="header__slider">
         <!-- Слайд 1 start -->
-        <div>
-          <img src="#" alt="Селфи палки">
-          <div>
-            <div>
+        <div class="header__slider-container">
+          <img class="header__slider-container-slide-1" src="img/slider-1-1.png"
+            width="385" height="486" alt="Селфи палки">
+          <div class="header__slider-wrapper">
+            <div class="header__slider-inner">
               <span></span>
               <p>
                 01
               </p>
             </div>
-            <div>
-              <p>
+            <div class="header__slider-inner-add">
+              <p class="header__slider-inner-add-text-1">
                 Делай селфи,<br>
                 как Бен Стиллер!
               </p>
-              <p>
+              <p class="header__slider-inner-add-text-2">
                 Самая длинная палка для селфи доступна в нашем магазине.<br>
                 Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
               </p>
-              <a href="blank.html">
-                подробнее
+              <a class="header__slider-inner-add-link" href="blank.html">
+                <span class="header__slider-inner-add-link-special-one"></span>
+                <span class="header__slider-inner-add-link-special-two">подробнее</span>
               </a>
             </div>
-            <div>
-              <div>
-                <p>
+            <div class="header__slider-inner-add-info">
+              <div class="header__slider-wrapper-add">
+                <p class="header__slider-wrapper-add-top">
                   8,5 м
                 </p>
-                <p>
+                <p class="header__slider-wrapper-add-bottom">
                   Длина палки
                 </p>
               </div>
-              <div>
-                <p>
+              <div class="header__slider-wrapper-add
+                header__slider-wrapper-add-set">
+                <p class="header__slider-wrapper-add-top">
                   5 кг
                 </p>
-                <p>
+                <p class="header__slider-wrapper-add-bottom">
                   Вес палки
                 </p>
               </div>
-              <div>
-                <p>
+              <div class="header__slider-wrapper-add
+                header__slider-wrapper-add-set">
+                <p class="header__slider-wrapper-add-top">
                   Карбон
                 </p>
-                <p>
+                <p class="header__slider-wrapper-add-bottom">
                   Материал
                 </p>
               </div>
@@ -135,7 +148,7 @@
         </div>
         <!-- Слайд 1 end -->
         <!-- Слайд 2 start -->
-        <div>
+        <div class="header__slider-hidden">
           <img src="#" alt="Селфи палки">
           <div>
             <div>
@@ -171,7 +184,7 @@
         </div>
         <!-- Слайд 2 end -->
         <!-- Слайд 3 start -->
-        <div>
+        <div class="header__slider-hidden">
           <img src="#" alt="Селфи палки">
           <div>
             <div>
@@ -215,7 +228,7 @@
         </div>
         <!-- Слайд 3 end -->
         <!-- Кнопки для слайдера start -->
-        <div>
+        <div class="header__set-button">
           <input type="radio" name="slider-gadget" checked>
           <input type="radio" name="slider-gadget">
           <input type="radio" name="slider-gadget">
@@ -225,50 +238,150 @@
       <!-- Slider end -->
     </header>
     <!--  -->
-    <main>
-      <section>
-        <ul>
-          <li>
-            <a href="blank.html">
-              <img src="#" alt="Виртуальная
-                реальность">
-              Виртуальная<br>
-              реальность
+    <main class="main">
+      <section class="main__devices-wrapper">
+        <ul class="main__devices-inner">
+          <li class="main__devices-li">
+            <a class="main__devices-link-container" href="blank.html">
+              <div class="main__devices-link-wrapper">
+                <img src="img/vr.svg" width="97" height="55" alt="Виртуальная
+                  реальность">
+              </div>
+              Виртуальная<br>реальность
             </a>
           </li>
-          <li>
-            <a href="catalog.html">
-              <img src="#" alt="Моноподы
-                для селфи">
-              Моноподы<br>
-              для селфи
+          <li class="main__devices-li">
+            <a class="main__devices-link-container" href="catalog.html">
+              <div class="main__devices-link-wrapper">
+                <img src="img/selfie.svg" width="86" height="117" alt="Моноподы
+                  для селфи">
+              </div>
+              Моноподы<br>для селфи
             </a>
           </li>
-          <li>
-            <a href="blank.html">
-              <img src="#" alt="Экшн-камеры">
+          <li class="main__devices-li">
+            <a class="main__devices-link-container" href="blank.html">
+              <div class="main__devices-link-wrapper">
+                <img src="img/cameras.svg" width="71" height="87"
+                  alt="Экшн-камеры">
+              </div>
               Экшн-камеры
             </a>
           </li>
-          <li>
-            <a href="blank.html">
-              <img src="#" alt="Фитнес-браслеты">
+          <li class="main__devices-li">
+            <a class="main__devices-link-container" href="blank.html">
+              <div class="main__devices-link-wrapper">
+                <img src="img/gadgets.svg" width="107" height="65"
+                  alt="Фитнес-браслеты">
+              </div>
               Фитнес-браслеты
             </a>
           </li>
-          <li>
-            <a href="blank.html">
-              <img src="#" alt="Умные часы">
+          <li class="main__devices-li">
+            <a class="main__devices-link-container" href="blank.html">
+              <div class="main__devices-link-wrapper">
+                <img src="img/smart-watches.svg" width="56" height="98"
+                  alt="Умные
+                  часы">
+              </div>
               Умные часы
             </a>
           </li>
-          <li>
-            <a href="blank.html">
-              <img src="#" alt="Квадрокоптеры">
+          <li class="main__devices-li">
+            <a class="main__devices-link-container" href="blank.html">
+              <div class="main__devices-link-wrapper">
+                <img src="img/flying-gadgets.svg" width="132" height="69"
+                  alt="Квадрокоптеры">
+              </div>
               Квадрокоптеры
             </a>
           </li>
         </ul>
+      </section>
+      <section class="main__card">
+        <span class="main__card-bg"></span>
+        <div class="main__card-wrapper">
+          <div class="main__card-container">
+            <div class="main__card-container-left">
+              <ul class="main__card-container-ul">
+                <li class="main__card-container-li">
+                  <button class="main__card-container-button" type="button">
+                    <span class="main__card-container-button-special"></span>
+                    <span class="main__card-container-button-special-p">доставка</span>
+                  </button>
+                </li>
+                <li class="main__card-container-li">
+                  <button class="main__card-container-button" type="button">
+                    <span class="main__card-container-button-special"></span>
+                    <span class="main__card-container-button-special-p">гарантия</span>
+                  </button>
+                </li>
+                <li class="main__card-container-li">
+                  <button class="main__card-container-button" type="button">
+                    <span class="main__card-container-button-special"></span>
+                    <span class="main__card-container-button-special-p">
+                      кредит
+                    </span>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="main__card-container-right">
+              <div class="main__card-container-slide">
+                <div class="main__card-container-inner">
+                  <p class="main__card-container-inner-p-main">
+                    Доставка
+                  </p>
+                  <p class="main__card-container-inner-p-article">
+                    Мы с удовольствием доставим ваш товар прямо к вашему<br>
+                    подъезду совершенно бесплатно! Ведь мы неплохо<br>
+                    заработаем, поднимая его на ваш этаж.
+                  </p>
+                </div>
+                <div class="main__card-container-inner">
+                  <img class="main__card-container-inner-img"
+                    src="img/worker.svg"
+                    width="136" height="164"
+                    alt="Доставщик">
+                </div>
+              </div>
+              <div class="main__card-hidden">
+                <div>
+                  <p>
+                    Гарантия
+                  </p>
+                  <p>
+                    Если из-за возгорания купленного у нас товара
+                    у вас сгорит дом —<br>
+                    не переживайте, мы выдадим вам новый.<br>
+                    Товар, не дом, конечно же.
+                  </p>
+                </div>
+                <div>
+                  <img src="img/guarantee.svg" width="171" height="195"
+                    alt="Гарантия">
+                </div>
+              </div>
+              <div class="main__card-hidden">
+                <div>
+                  <p>
+                    Кредит
+                  </p>
+                  <p>
+                    Залезть в долговую яму стало проще! Кредитные консультанты<br>
+                    подберут для вас наиболее выгодные<br>
+                    условия кредита. Выгодные для нашего банка, разумеется.
+                  </p>
+                </div>
+                <div>
+                  <img src="img/credit_1.svg" width="156" height="188"
+                    alt="Кредит">
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </section>
     </main>
     <!--  -->
