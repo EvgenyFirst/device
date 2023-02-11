@@ -6,9 +6,12 @@
   --rgba-lighter-black-color: rgba(0, 0, 0, 0.3);
   --rgba-light-black-color: rgba(0, 0, 0, 0.25);
   --light-grey-color: #e5e5e5;
+  --dark-grey-color: #363636;
   --special-yellow-color: #f7e296;
   --yellow-color: #f0c52e;
+  --dark-yellow-color: #ffc600;
   --white-color: #ffffff;
+  --rgba-white-color: rgba(255, 255, 255, 0.7);
 
   --font-open-sans: "Open Sans";
   --font-montserrat: "Montserrat";
@@ -581,6 +584,8 @@ body {
   min-height: 320px;
 
   position: relative;
+
+  margin-bottom: 40px;
 }
 .main__card-bg {
   position: absolute;
@@ -730,5 +735,327 @@ body {
   display: none;
 }
 /* Опции end */
+/* ____ */
+/* ____ */
+/* Партнеры start */
+.main__partners {
+  width: 100%;
+  min-width: 100%;
+  min-height: 100px;
+
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.main__partners-ul {
+  list-style: none;
+
+  padding-left: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main__partners-li {
+  padding-right: 1px;
+  padding-left: 1px;
+}
+.main__partners-li:first-child {
+  padding-right: 1px;
+  padding-left: 0;
+}
+.main__partners-li:last-child {
+  padding-right: 0;
+  padding-left: 1px;
+}
+/* Партнеры end */
+/* ____ */
+/* ____ */
+/* О нас и контакты start */
+.main__about {
+  min-height: 561px;
+
+  margin-top: 40px;
+
+  display: flex;
+  justify-content: space-between;
+
+  padding-right: 1px;
+  padding-left: 1px;
+}
+.main__about:first-child {
+  padding-right: 1px;
+  padding-left: 0;
+}
+.main__about:last-child {
+  padding-right: 0;
+  padding-left: 1px;
+}
+
+.main__about-container-line {
+  display: block;
+
+  width: 80px;
+  height: 7px;
+
+  background-color: var(--black-color);
+}
+
+.main__about-container-p-main {
+  font-family: var(--font-montserrat);
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+  letter-spacing: 0.2em;
+  color: var(--black-color);
+}
+
+.main__about-container-p-article {
+  font-family: var(--font-open-sans);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 28px;
+  color: var(--black-color);
+}
+
+.main__about-container-right-map {
+  margin-bottom: 8px;
+}
+
+.main__about-container-left-ul {
+  list-style: circle;
+
+  margin-bottom: 46px;
+
+  padding-left: 20px;
+}
+
+.main__about-container-left-li-p {
+  font-family: var(--font-montserrat);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--black-color);
+
+  padding-left: 15px;
+}
+
+.main__about-container-link {
+  position: relative;
+
+  width: 260px;
+
+  display: flex;
+  align-items: center;
+
+  text-decoration: none;
+}
+.main__about-container-link:hover {
+  cursor: pointer;
+}
+
+.main__about-container-link-left {
+  padding-top: 45px;
+}
+
+.main__about-container-link-right {
+  padding-top: 45px;
+}
+
+.main__about-container-link-special {
+  position: absolute;
+  left: 0;
+
+  width: 260px;
+  height: 8px;
+
+  background: var(--yellow-color);
+
+  z-index: 1;
+}
+.main__about-container-link-special-p {
+  font-family: var(--font-montserrat);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--black-color);
+
+  width: 260px;
+
+  margin-left: -3px;
+
+  display: flex;
+  justify-content: center;
+
+  z-index: 2;
+}
+/* О нас и контакты end */
+/* ____ */
+/* ____ */
+/* Подвел start */
+.footer {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+
+  min-height: 324px;
+}
+
+.footer__bg {
+  width: 500vw;
+
+  position: absolute;
+  bottom: 0;
+
+  background-color: var(--dark-grey-color);
+}
+
+.footer__container {
+  display: flex;
+  justify-content: center;
+
+  padding-top: 64px;
+  padding-bottom: 58px;
+}
+
+.footer__container-wrap {
+  display: flex;
+  justify-content: space-around;
+
+  width: 1400px;
+  min-height: inherit;
+}
+
+.footer__container-wrap-left {
+  min-height: inherit;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__container-wrap-link {
+  margin-bottom: 20px;
+
+  color: var(--white-color);
+}
+
+.footer__container-wrap-address {
+  font-family: var(--font-open-sans);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--white-color);
+
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.footer__container-wrap-address-span {
+  display: block;
+
+  width: 80px;
+  height: 7px;
+
+  margin-top: 30px;
+
+  background-color: var(--dark-yellow-color);
+}
+
+.footer__container-wrap-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__container-wrap-center-ul {
+  list-style-type: none;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.footer__container-wrap-center-li {
+  padding-right: 18px;
+  padding-left: 18px;
+}
+.footer__container-wrap-center-li:first-child {
+  padding-right: 18px;
+  padding-left: 0;
+}
+.footer__container-wrap-center-li:last-child {
+  padding-right: 0;
+  padding-left: 18px;
+}
+
+.footer__container-wrap-center-li-add {
+  margin-left: -18px;
+}
+
+.footer__container-wrap-center-link {
+  font-family: var(--font-open-sans);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+.footer__container-wrap-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.footer__container-wrap-right-ul {
+  list-style: none;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+  width: 325px;
+
+  padding-left: 0;
+}
+
+.footer__container-wrap-right-txt {
+  font-family: var(--font-open-sans);
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--rgba-white-color);
+  text-decoration: none;
+}
+
+.footer__container-wrap-right-txt-add {
+  border: none;
+
+  padding-left: 0;
+
+  background: none;
+}
+
+.footer__container-wrap-right-tel {
+  font-family: var(--font-open-sans);
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--white-color);
+  text-decoration: none;
+}
+/* Подвел end */
 /* ____ */
 /* ____ */
