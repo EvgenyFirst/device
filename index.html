@@ -21,12 +21,13 @@
     <!-- Шапка start -->
     <header class="header">
       <a class="header__link">
-        <img src="img/logo.svg" width="163" height="35" alt="Логотип Device">
+        <img class="header__link-logo" src="img/logo.svg" width="163"
+          height="35" alt="Логотип Device">
       </a>
       <div class="header__container">
         <nav class="header__container-inner">
           <div>
-            <form class="header__container-form" action="/">
+            <form class="header__container-form" action="/" tabindex="0">
               <button class="header__container-form-btn" type="submit">
                 <img src="img/icon_search.svg" width="16" height="16"
                   alt="Иконка поиска">
@@ -35,6 +36,9 @@
               <input class="header__container-input" type="search"
                 id="find-in-site" placeholder="Поиск по сайту">
               <label for="find-in-site"></label>
+              <button class="header__container-form-btn-add" type="submit">
+                Найти
+              </button>
             </form>
           </div>
           <div class="header__container-right">
@@ -308,9 +312,13 @@
             <div class="main__card-container-left">
               <ul class="main__card-container-ul">
                 <li class="main__card-container-li">
-                  <button class="main__card-container-button" type="button">
-                    <span class="main__card-container-button-special"></span>
-                    <span class="main__card-container-button-special-p">доставка</span>
+                  <button class="main__card-container-button
+                    main__card-container-button-add
+                    main__card-container-button-active" type="button">
+                    <span class="main__card-container-button-special
+                      main__card-container-button-special-active"></span>
+                    <span class="main__card-container-button-special-p
+                      main__card-container-button-special-p-active">доставка</span>
                   </button>
                 </li>
                 <li class="main__card-container-li">
@@ -427,7 +435,8 @@
             <p class="main__about-container-p-main">
               О нас
             </p>
-            <p class="main__about-container-p-article main__about-container-p-article-add">
+            <p class="main__about-container-p-article
+              main__about-container-p-article-add">
               Огромный выбор гаджетов не оставит равнодушным гика,<br>
               который есть в каждом из нас.
             </p>
@@ -535,7 +544,7 @@
                 <li class="footer__container-wrap-center-li
                   footer__container-wrap-center-li-add">
                   <a class="footer__container-wrap-center-link" href="#">
-                    <img src="img/icon_twitter.svg" width="32" height="32"
+                    <img src="/img/icon_twitter.svg" width="32" height="32"
                       alt="Twitter">
                   </a>
                 </li>
@@ -570,7 +579,8 @@
                 <a class="footer__container-wrap-right-tel"
                   href="tel:74954959595">Тел.: +7 (495) 495-95-95</a>
               </div>
-              <a class="footer__container-wrap-right-author" href="https://htmlacademy.ru/intensive/htmlcss">
+              <a class="footer__container-wrap-right-author"
+                href="https://htmlacademy.ru/intensive/htmlcss">
                 <img src="img/logo-html-academy.svg" width="27" height="34"
                   alt="Логотип авторов HTML Academy">
               </a>

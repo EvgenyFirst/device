@@ -5,6 +5,7 @@
   --black-color: #000000;
   --rgba-lighter-black-color: rgba(0, 0, 0, 0.3);
   --rgba-light-black-color: rgba(0, 0, 0, 0.25);
+  --rgba-very-light-black-color: rgba(0, 0, 0, 0.6);
   --light-grey-color: #e5e5e5;
   --dark-grey-color: #363636;
   --special-yellow-color: #f7e296;
@@ -136,6 +137,13 @@ body {
   z-index: 1;
 }
 
+.header__link img:hover {
+  opacity: 60%;
+}
+.header__link img:active {
+  opacity: 30%;
+}
+
 .header__container {
   min-height: 256px;
 
@@ -177,6 +185,19 @@ body {
 .header__container-form-btn:hover {
   cursor: pointer;
 }
+.header__container-form-btn:hover + .header__container-input::placeholder {
+  color: var(--rgba-very-light-black-color);
+}
+.header__container-form-btn:focus + .header__container-input::placeholder {
+  color: var(--black-color);
+}
+.header__container-form:focus + .header__container-form-btn-add {
+  display: block;
+}
+
+.header__container-form-btn-add {
+  display: none;
+}
 
 .header__container-form-btn img {
   margin-top: 7px;
@@ -199,6 +220,12 @@ body {
 
   color: var(--rgba-lighter-black-color);
   text-shadow: 0 4px 4px var(--rgba-light-black-color);
+}
+.header__container-input:hover::placeholder {
+  color: var(--rgba-very-light-black-color);
+}
+.header__container-input:focus::placeholder {
+  color: var(--black-color);
 }
 
 .header__container-btn-set {
@@ -660,6 +687,16 @@ body {
   cursor: pointer;
 }
 
+.main__card-container-button-add {
+  margin-top: -8px;
+}
+
+.main__card-container-button-active {
+  min-height: 40px;
+
+  background-color: var(--black-color);
+}
+
 .main__card-container-button-special {
   position: absolute;
   left: 0;
@@ -671,6 +708,11 @@ body {
 
   z-index: 1;
 }
+
+.main__card-container-button-special-active {
+  background: transparent;
+}
+
 .main__card-container-button-special-p {
   font-family: var(--font-montserrat);
   font-style: normal;
@@ -686,6 +728,10 @@ body {
   margin-left: -3px;
 
   z-index: 2;
+}
+
+.main__card-container-button-special-p-active {
+  color: var(--special-yellow-color);
 }
 
 .main__card-container-right {
