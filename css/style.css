@@ -1088,6 +1088,9 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: var(--white-color);
+
+  min-width: 32px;
+  min-height: 32px;
 }
 
 .footer__container-wrap-right {
