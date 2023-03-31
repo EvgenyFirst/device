@@ -102,10 +102,9 @@ html {
 }
 
 body {
-  display: grid;
-
   width: 100%;
   max-width: 1440px;
+  height: 100vh;
 
   display: flex;
   align-items: center;
@@ -118,8 +117,7 @@ body {
 /* ____ */
 /* Шапка start */
 .header {
-  width: 100%;
-  max-width: 1160px;
+  width: 1160px;
 
   display: grid;
 
@@ -966,6 +964,8 @@ body {
   min-height: 324px;
 
   margin-top: 84px;
+
+  flex: 1;
 }
 
 .footer__bg {
@@ -1044,6 +1044,9 @@ body {
   justify-content: space-between;
   align-items: center;
 
+  margin-right: auto;
+  margin-left: auto;
+
   padding-top: 13px;
   padding-left: 85px;
 }
@@ -1098,6 +1101,8 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
+
+  width: 330px;
 }
 
 .footer__container-wrap-right-ul {
@@ -1110,6 +1115,13 @@ body {
   width: 325px;
 
   padding-left: 0;
+}
+
+.footer__container-wrap-right-ul-catalog {
+  width: 480px;
+
+  margin-left: -480px;
+  margin-bottom: 10px;
 }
 
 .footer__container-wrap-right-data-work {

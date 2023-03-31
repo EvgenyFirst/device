@@ -3,7 +3,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,144 +18,172 @@
   </head>
 
   <body>
-    <!--  -->
     <header class="header">
       <a class="header__link" href="index.html">
-        <img src="/img/logo.svg" width="163" height="35" alt="Логотип Device">
+        <img class="header__link-logo" src="img/logo.svg" width="163"
+          height="35" alt="Логотип Device">
       </a>
       <div class="header__container">
-        <nav>
+        <nav class="header__container-inner">
           <div>
-            <form action="/">
-              <button type="submit">
-                Поиск по сайту
+            <form class="header__container-form" action="/" tabindex="0">
+              <button class="header__container-form-btn" type="submit">
+                <img src="img/icon_search.svg" width="16" height="16"
+                  alt="Иконка поиска">
+                <span>Поиск по сайту</span>
               </button>
-              <input type="search" id="find-in-site" placeholder="Поиск по сайту">
+              <input class="header__container-input" type="search"
+                id="find-in-site" placeholder="Поиск по сайту">
               <label for="find-in-site"></label>
+              <button class="header__container-form-btn-add" type="submit">
+                Найти
+              </button>
             </form>
           </div>
-          <div>
+          <div class="header__container-right">
             <div>
-              <a>
-                <img src="#" alt="Иконка входа">
+              <a href="#" class="header__container-login
+                header__container-right-nav">
+                <img src="img/icon_user.svg" width="13" height="14" alt="Иконка
+                  входа">
                 Войти
               </a>
             </div>
-            <div>
-              <button type="button">
-                <img src="#" alt="Иконка сравнения">
+            <div class="header__container-right-inner
+              header__container-right-nav">
+              <button class="header__container-btn-set" type="button">
+                <img src="img/icon_settings.svg" width="10" height="10"
+                  alt="Иконка сравнения">
                 Сравнить
               </button>
-              <a>
-                <img src="#" alt="Иконка корзины">
+              <a href="#" class="header__container-basket
+                header__container-right-nav">
+                <img src="img/icon_basket.svg" width="10" height="10"
+                  alt="Иконка корзины">
                 Корзина
               </a>
             </div>
           </div>
         </nav>
-        <nav>
-          <div>
-            <a href="catalog.html">
-              каталог товаров
-              <img src="#" alt="Символ плюс">
-            </a>
-          </div>
-          <div>
+        <nav class="header__container-inner-bottom">
+          <a class="header__container-inner-bottom-link" href="catalog.html">
+            каталог товаров
+            <img class="header__container-inner-bottom-link-plus"
+              src="img/icon_plus.svg" width="22" height="22" alt="Символ плюс">
+          </a>
+          <div class="header__container-inner-bottom-ul">
             <ul>
               <li>
-                <a href="blank.html">
+                <a class="header__container-inner-bottom-link"
+                  href="blank.html">
                   доставка
                 </a>
               </li>
               <li>
-                <a href="blank.html">
+                <a class="header__container-inner-bottom-link"
+                  href="blank.html">
                   гарантия
                 </a>
               </li>
             </ul>
-            <a href="blank.html">
+            <a class="header__container-inner-bottom-link" href="blank.html">
               контакты
             </a>
           </div>
         </nav>
       </div>
     </header>
-    <!--  -->
+    <!-- Шапка end -->
     <main>
       <section>
         <h1>Пустая страница-заглушка</h1>
       </section>
     </main>
-    <!--  -->
-    <footer>
-      <div>
-        <div>
-          <a>
-            <img src="#" alt="Логотип Device">
-          </a>
-          <address>
-            г. Москва, ул. Строителей, 15
-          </address>
-          <span></span>
+    <!-- Подвел start -->
+    <footer class="footer">
+      <div class="footer__bg">
+        <div class="footer__container">
+          <div class="footer__container-wrap">
+            <div class="footer__container-wrap-left">
+              <a class="footer__container-wrap-link">
+                <img src="img/logo_footer.svg" width="163" height="35"
+                  alt="Логотип Device">
+              </a>
+              <address class="footer__container-wrap-address">
+                г. Москва, ул. Строителей, 15
+              </address>
+              <span class="footer__container-wrap-address-span"></span>
+            </div>
+            <div class="footer__container-wrap-center">
+              <ul class="footer__container-wrap-center-ul">
+                <li class="footer__container-wrap-center-li">
+                  <a class="footer__container-wrap-center-link"
+                    href="blank.html">
+                    доставка
+                  </a>
+                </li>
+                <li class="footer__container-wrap-center-li">
+                  <a class="footer__container-wrap-center-link"
+                    href="blank.html">
+                    гарантия
+                  </a>
+                </li>
+                <li class="footer__container-wrap-center-li">
+                  <a class="footer__container-wrap-center-link"
+                    href="blank.html">
+                    контакты
+                  </a>
+                </li>
+              </ul>
+              <ul class="footer__container-wrap-center-ul">
+                <li class="footer__container-wrap-center-li
+                  footer__container-wrap-center-li-add">
+                  <a class="footer__container-wrap-center-link" href="#">
+                    <img src="img/icon_twitter.svg" width="32" height="32"
+                      alt="Twitter">
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__container-wrap-right">
+              <ul class="footer__container-wrap-right-ul">
+                <li class="footer__container-wrap-right-li">
+                  <a class="footer__container-wrap-right-txt" href="blank.html">
+                    <img src="img/icon_user-footer.svg" width="13" height="14"
+                      alt="Иконка пользователя">
+                    Войти
+                  </a>
+                </li>
+                <li class="footer__container-wrap-right-li">
+                  <button class="footer__container-wrap-right-txt
+                    footer__container-wrap-right-txt-add" type="button">
+                    <img src="img/icon_settings-footer.svg" width="14"
+                      height="14" alt="Иконка сравнения">
+                    Сравнить
+                  </button>
+                </li>
+                <li class="footer__container-wrap-right-li">
+                  <a class="footer__container-wrap-right-txt" href="blank.html">
+                    <img src="img/icon_basket-footer.svg" width="10" height="10"
+                      alt="Иконка корзины">
+                    Корзина
+                  </a>
+                </li>
+              </ul>
+              <div class="footer__container-wrap-right-data-work">
+                <a class="footer__container-wrap-right-tel"
+                  href="tel:74954959595">Тел.: +7 (495) 495-95-95</a>
+              </div>
+              <a class="footer__container-wrap-right-author"
+                href="https://htmlacademy.ru/intensive/htmlcss">
+                <img src="img/logo-html-academy.svg" width="27" height="34"
+                  alt="Логотип авторов HTML Academy">
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-      <div>
-        <ul>
-          <li>
-            <a href="blank.html">
-              доставка
-            </a>
-          </li>
-          <li>
-            <a href="blank.html">
-              гарантия
-            </a>
-          </li>
-          <li>
-            <a href="blank.html">
-              контакты
-            </a>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a href="#">
-              Twitter
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div>
-        <ul>
-          <li>
-            <a href="#">
-              <img src="#" alt="Иконка пользователя">
-              Войти
-            </a>
-          </li>
-          <li>
-            <button type="button">
-              <img src="#" alt="Иконка сравнения">
-              Сравнить
-            </button>
-          </li>
-          <li>
-            <a href="blank.html">
-              <img src="#" alt="Иконка корзины">
-              Корзина
-            </a>
-          </li>
-        </ul>
-        <div>
-          <p>
-            Тел.:
-          </p>
-          <a href="tel:74954959595">Тел.: +7 (495) 495-95-95</a>
-        </div>
-      </div>
-      <a href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="#" alt="Логотип авторов HTML Academy">
-      </a>
     </footer>
+    <!-- Подвал end -->
   </body>
 </html>
