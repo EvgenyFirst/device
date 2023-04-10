@@ -221,6 +221,12 @@ body {
 .header__container-form-btn-add:active .header__container-form-btn-add-txt {
   color: var(--rgba-lighter-white-color);
 }
+.header__container-form-btn-add:active {
+  display: block;
+}
+.header__container-form-btn-add:active span {
+  color: var(--white-color);
+}
 
 .header__container-form-btn-add-txt {
   font-family: var(--font-open-sans);
@@ -276,6 +282,12 @@ body {
 
   right: -2px;
   bottom: 0;
+}
+.header__container-input:focus ~ .header__container-form-btn-add:hover span {
+  color: var(--white-color);
+}
+.header__container-input:focus ~ .header__container-form-btn-add {
+  display: block;
 }
 
 .header__container-btn-set {
