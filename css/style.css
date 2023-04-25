@@ -172,7 +172,9 @@ body {
 
   position: absolute;
 
-  margin-top: -5px;
+  min-height: 55px;
+
+  margin-top: -15px;
 }
 
 .header__container-catalog {
