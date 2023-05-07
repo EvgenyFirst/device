@@ -21,11 +21,12 @@
     <!--  -->
     <header class="header">
       <a class="header__link" href="index.html">
-        <img src="/img/logo.svg" width="163" height="35" alt="Логотип Device">
+        <img class="header__link-logo" src="img/logo.svg" width="163"
+          height="35" alt="Логотип Device">
       </a>
-      <div class="header__container header__container-catalog">
+      <div class="header__container">
         <nav class="header__container-inner">
-          <div class="header__container-wrapper"></div>>
+          <div>
             <form class="header__container-form" action="/">
               <button class="header__container-form-btn" type="submit">
                 <img src="img/icon_search.svg" width="16" height="16"
@@ -36,7 +37,7 @@
                 id="find-in-site" placeholder="Поиск по сайту">
               <label for="find-in-site"></label>
               <button class="header__container-form-btn-add" type="submit">
-                <span class="header__container-form-btn-add-txt">Найти</span>
+                <span>Найти</span>
               </button>
             </form>
           </div>
@@ -69,14 +70,11 @@
           </div>
         </nav>
         <nav class="header__container-inner-bottom">
-          <div>
-            <a class="header__container-inner-bottom-link" href="catalog.html">
-              каталог товаров
-              <img class="header__container-inner-bottom-link-plus"
-                src="img/icon_plus.svg" width="22" height="22" alt="Символ
-                плюс">
-            </a>
-          </div>
+          <a class="header__container-inner-bottom-link" href="catalog.html">
+            каталог товаров
+            <img class="header__container-inner-bottom-link-plus"
+              src="img/icon_plus.svg" width="22" height="22" alt="Символ плюс">
+          </a>
           <div class="header__container-inner-bottom-ul">
             <ul>
               <li>
@@ -100,28 +98,28 @@
       </div>
     </header>
     <!--  -->
-    <main>
-      <section>
-        <h1>Моноподы для селфи</h1>
-        <ul>
-          <li>
-            <a href="index.html">
+    <main class="main">
+      <section class="main__gadgets">
+        <h1 class="main__gadgets-header">Моноподы для селфи</h1>
+        <ul class="main__gadgets-list">
+          <li class="main__gadgets-item">
+            <a class="main__gadgets-link" href="index.html">
               Главная
             </a>
           </li>
-          <li>
-            <span></span>
+          <li class="main__gadgets-item">
+            <span class="main__gadgets-item-add">></span>
           </li>
-          <li>
-            <a href="catalog.html">
+          <li class="main__gadgets-item">
+            <a class="main__gadgets-link" href="catalog.html">
               Каталог товаров
             </a>
           </li>
-          <li>
-            <span></span>
+          <li class="main__gadgets-item">
+            <span class="main__gadgets-item-add">></span>
           </li>
-          <li>
-            <a>
+          <li class="main__gadgets-item">
+            <a class="main__gadgets-link">
               Моноподы для селфи
             </a>
           </li>
@@ -460,16 +458,18 @@
             </div>
             <!--  footer__container-wrap-right-catalog-->
             <div class="footer__container-wrap-right
-            footer__container-wrap-right-catalog">
-            <!--  footer__container-wrap-right-ul-catalog-->
-              <ul class="footer__container-wrap-right-ul footer__container-wrap-right-ul-catalog">
+              footer__container-wrap-right-catalog">
+              <!--  footer__container-wrap-right-ul-catalog-->
+              <ul class="footer__container-wrap-right-ul
+                footer__container-wrap-right-ul-catalog">
                 <li class="footer__container-wrap-right-li">
                   <a class="footer__container-wrap-right-txt">
                     <img src="img/icon_user-footer-in.svg" width="13"
                       height="14" alt="Иконка авторизованного">
                     Валентин Петухов
                   </a>
-                  <a class="footer__container-wrap-right-txt-exit" href="blank.html">
+                  <a class="footer__container-wrap-right-txt-exit"
+                    href="blank.html">
                     Выйти
                   </a>
                 </li>

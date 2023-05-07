@@ -796,7 +796,6 @@ body {
 
 .main__card-container-button-special-p {
   font-family: var(--font-montserrat);
-  font-style: normal;
   font-weight: 800;
   font-size: 16px;
   line-height: 22px;
@@ -850,7 +849,6 @@ body {
 
 .main__card-container-inner-p-article {
   font-family: var(--font-open-sans);
-  font-style: normal;
   font-weight: 300;
   font-size: 15px;
   line-height: 30px;
@@ -944,7 +942,6 @@ body {
 
 .main__about-container-p-article {
   font-family: var(--font-open-sans);
-  font-style: normal;
   font-weight: 300;
   font-size: 15px;
   line-height: 28px;
@@ -973,7 +970,6 @@ body {
 
 .main__about-container-left-li-p {
   font-family: var(--font-montserrat);
-  font-style: normal;
   font-weight: 800;
   font-size: 13px;
   line-height: 28px;
@@ -1017,7 +1013,6 @@ body {
 }
 .main__about-container-link-special-p {
   font-family: var(--font-montserrat);
-  font-style: normal;
   font-weight: 800;
   font-size: 15px;
   line-height: 22px;
@@ -1035,6 +1030,72 @@ body {
   z-index: 2;
 }
 /* О нас и контакты end */
+/* ____ */
+/* ____ */
+/* Каталог start */
+.main__gadgets {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  flex-direction: column;
+
+  width: 1160px;
+}
+
+.main__gadgets-header {
+  font-family: var(--font-montserrat);
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+  color: var(--black-color);
+
+  padding-left: 60px;
+}
+
+.main__gadgets-list {
+  list-style: none;
+
+  padding-left: 60px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.main__gadgets-item {
+  padding-right: 9.75px;
+  padding-left: 9.75px;
+}
+.main__gadgets-item:first-child {
+  padding-right: 9.75px;
+  padding-left: 0;
+}
+.main__gadgets-item:last-child {
+  padding-right: 0;
+  padding-left: 9.75px;
+}
+
+.main__gadgets-item-add {
+  font-size: 0;
+
+  display: block;
+
+  background-image: url("../img/arrow-right.svg");
+  width: 4px;
+  height: 7px;
+}
+
+.main__gadgets-link {
+  font-family: var(--font-open-sans);
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+  opacity: 0.3;
+  color: var(--black-color);
+
+  text-decoration: none;
+}
+/* Каталог end */
 /* ____ */
 /* ____ */
 /* Подвел start */
@@ -1099,7 +1160,6 @@ body {
 
 .footer__container-wrap-address {
   font-family: var(--font-open-sans);
-  font-style: normal;
   font-weight: 300;
   font-size: 15px;
   line-height: 20px;
@@ -1166,7 +1226,6 @@ body {
 
 .footer__container-wrap-center-link {
   font-family: var(--font-open-sans);
-  font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
