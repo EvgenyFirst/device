@@ -24,7 +24,7 @@
         <img class="header__link-logo" src="img/logo.svg" width="163"
           height="35" alt="Логотип Device">
       </a>
-      <div class="header__container">
+      <div class="header__container header__container-add">
         <nav class="header__container-inner">
           <div>
             <form class="header__container-form" action="/">
@@ -140,92 +140,101 @@
                 <form class="main__catalog-filter-left-bottom" method="post"
                   action="https://echo.htmlacademy.ru">
                   <div class="main__catalog-filter-left-bottom-inner">
-                    <p>
+                    <p class="main__catalog-filter-p">
                       Стоимость
                     </p>
                     <div>
                       <span></span>
                       <span></span>
                     </div>
-                    <div>
-                      <p>
+                    <div class="main__catalog-filter-range">
+                      <p class="main__catalog-filter-p-range">
                         от 0
                       </p>
-                      <p>
+                      <p class="main__catalog-filter-p-range">
                         до 5000
                       </p>
                     </div>
                   </div>
                   <div class="main__catalog-filter-left-bottom-inner">
-                    <p>
-                      Цвет
-                    </p>
-                    <ul>
-                      <li>
-                        <input type="checkbox"
-                          name="Цвет монопода для селфи: "
-                          id="color-black" checked
-                          value="Чёрный">
-                        <label for="color-black">Чёрный</label>
-                      </li>
-                      <li>
-                        <input type="checkbox"
-                          name="Цвет монопода для селфи: "
-                          id="color-white"
-                          value="Белый">
-                        <label for="color-white">Белый</label>
-                      </li>
-                      <li>
-                        <input type="checkbox"
-                          name="Цвет монопода для селфи: "
-                          id="color-blue" checked
-                          value="Синий">
-                        <label for="color-blue">Синий</label>
-                      </li>
-                      <li>
-                        <input type="checkbox"
-                          name="Цвет монопода для селфи: "
-                          id="color-red" checked
-                          value="Красный">
-                        <label for="color-red">Красный</label>
-                      </li>
-                      <li>
-                        <input type="checkbox"
-                          name="Цвет монопода для селфи: "
-                          id="color-pink"
-                          value="Розовый">
-                        <label for="color-pink">Розовый</label>
-                      </li>
-                    </ul>
-                    <ul>
-                      <li>
-                        <p>
-                          Bluetooth
-                        </p>
-                      </li>
-                      <li>
-                        <input
-                          class=""
-                          type="radio"
-                          name="Bluetooth монопода для селфи: " value="Есть"
-                          id="filter-bluetooth-yes" checked>
-                        <label
-                          class=""
-                          for="filter-bluetooth-yes">Есть</label>
-                      </li>
-                      <li>
-                        <input
-                          class=""
-                          type="radio"
-                          name="Bluetooth: " value="Нет"
-                          id="filter-bluetooth-no">
-                        <label
-                          class=""
-                          for="filter-bluetooth-no">Нет</label>
-                      </li>
-                    </ul>
-                    <button type="submit">
-                      показать
+                    <div>
+                      <p class="main__catalog-filter-p">
+                        Цвет
+                      </p>
+                      <ul class="main__catalog-filter-color-ul">
+                        <li>
+                          <input type="checkbox"
+                            name="Цвет монопода для селфи: "
+                            id="color-black" checked
+                            value="Чёрный">
+                          <label class="main__catalog-filter-color-li-label"
+                            for="color-black">Чёрный</label>
+                        </li>
+                        <li>
+                          <input type="checkbox"
+                            name="Цвет монопода для селфи: "
+                            id="color-white"
+                            value="Белый">
+                          <label class="main__catalog-filter-color-li-label"
+                            for="color-white">Белый</label>
+                        </li>
+                        <li>
+                          <input type="checkbox"
+                            name="Цвет монопода для селфи: "
+                            id="color-blue" checked
+                            value="Синий">
+                          <label class="main__catalog-filter-color-li-label"
+                            for="color-blue">Синий</label>
+                        </li>
+                        <li>
+                          <input type="checkbox"
+                            name="Цвет монопода для селфи: "
+                            id="color-red" checked
+                            value="Красный">
+                          <label class="main__catalog-filter-color-li-label"
+                            for="color-red">Красный</label>
+                        </li>
+                        <li>
+                          <input type="checkbox"
+                            name="Цвет монопода для селфи: "
+                            id="color-pink"
+                            value="Розовый">
+                          <label class="main__catalog-filter-color-li-label"
+                            for="color-pink">Розовый</label>
+                        </li>
+                      </ul>
+                    </div>
+                    <div>
+                      <p class="main__catalog-filter-p">
+                        Bluetooth
+                      </p>
+                      <ul class="main__catalog-filter-bluetooth-ul">
+                        <li>
+                          <input
+                            class=""
+                            type="radio"
+                            name="Bluetooth монопода для селфи: " value="Есть"
+                            id="filter-bluetooth-yes" checked>
+                          <label
+                            class="main__catalog-filter-bluetooth-li-label"
+                            for="filter-bluetooth-yes">Есть</label>
+                        </li>
+                        <li>
+                          <input
+                            class=""
+                            type="radio"
+                            name="Bluetooth: " value="Нет"
+                            id="filter-bluetooth-no">
+                          <label
+                            class="main__catalog-filter-bluetooth-li-label"
+                            for="filter-bluetooth-no">Нет</label>
+                        </li>
+                      </ul>
+                    </div>
+                    <button class="main__catalog-filter-left-bottom-btn"
+                      type="submit">
+                      <span class="main__catalog-filter-left-bottom-btn-special-one"></span>
+                      <span class="main__catalog-filter-left-bottom-btn-special-two">показать</span>
                     </button>
                   </div>
                 </form>
@@ -236,24 +245,32 @@
                 <div class="main__catalog-filter-main-top-bg">
                   <ul class="main__catalog-filter-main-top-ul">
                     <li class="main__catalog-filter-main-top-li">
-                      <p>
+                      <p class="main__catalog-filter-main-top-li-p">
                         сортировка:
                       </p>
                     </li>
-                    <li class="main__catalog-filter-main-top-li main-catalog-filter-main-top-li-center">
+                    <li class="main__catalog-filter-main-top-li
+                      main-catalog-filter-main-top-li-center">
                       <ul class="main__catalog-filter-main-top-li-ul-inner">
                         <li>
-                          <button class="main__catalog-filter-main-top-li-ul-btn-center" type="button">
+                          <button
+                            class="main__catalog-filter-main-top-li-ul-btn-center
+                            main__catalog-filter-main-top-li-ul-btn-active"
+                            type="button">
                             По цене
                           </button>
                         </li>
                         <li>
-                          <button class="main__catalog-filter-main-top-li-ul-btn-center" type="button">
+                          <button
+                            class="main__catalog-filter-main-top-li-ul-btn-center"
+                            type="button">
                             По типу
                           </button>
                         </li>
                         <li>
-                          <button class="main__catalog-filter-main-top-li-ul-btn-center" type="button">
+                          <button
+                            class="main__catalog-filter-main-top-li-ul-btn-center"
+                            type="button">
                             По популярности
                           </button>
                         </li>
@@ -262,12 +279,16 @@
                     <li class="main__catalog-filter-main-top-li">
                       <ul class="main__catalog-filter-main-top-li-ul-inner">
                         <li>
-                          <button class="main__catalog-filter-main-top-li-ul-btn-right main__catalog-filter-btn-right-left" type="button">
+                          <button
+                            class="main__catalog-filter-main-top-li-ul-btn-right
+                            main__catalog-filter-btn-right-left" type="button">
                             По возрастанию
                           </button>
                         </li>
                         <li>
-                          <button class="main__catalog-filter-main-top-li-ul-btn-right main__catalog-filter-btn-right-right" type="button">
+                          <button
+                            class="main__catalog-filter-main-top-li-ul-btn-right
+                            main__catalog-filter-btn-right-right" type="button">
                             По убыванию
                           </button>
                         </li>
@@ -276,9 +297,9 @@
                   </ul>
                 </div>
               </div>
-              <ul>
-                <li>
-                  <div>
+              <ul class="main__catalog-filter-main-top-price">
+                <li class="main__catalog-filter-main-top-price-item">
+                  <div class="main__catalog-filter-main-top-price-wrap-top">
                     <img src="/" alt="Любительская селфи-палка">
                     <p>
                       New
@@ -301,8 +322,8 @@
                     </p>
                   </div>
                 </li>
-                <li>
-                  <div>
+                <li class="main__catalog-filter-main-top-price-item">
+                  <div class="main__catalog-filter-main-top-price-wrap-top">
                     <img src="/" alt="Профессиональная селфи-палка">
                     <p>
                       New
@@ -325,8 +346,8 @@
                     </p>
                   </div>
                 </li>
-                <li>
-                  <div>
+                <li class="main__catalog-filter-main-top-price-item">
+                  <div class="main__catalog-filter-main-top-price-wrap-top">
                     <img src="/" alt="Непотопляемая селфи-палка">
                     <p>
                       New
@@ -349,8 +370,8 @@
                     </p>
                   </div>
                 </li>
-                <li>
-                  <div>
+                <li class="main__catalog-filter-main-top-price-item">
+                  <div class="main__catalog-filter-main-top-price-wrap-top">
                     <img src="/" alt="Селфи-палка «Следуй за мной»">
                     <p>
                       New
