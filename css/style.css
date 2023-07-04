@@ -105,6 +105,27 @@ html {
   */
 }
 
+.visually-hidden {
+  position: absolute;
+
+  white-space: nowrap;
+
+  width: 1px;
+  height: 1px;
+
+  overflow: hidden;
+
+  margin: -1px;
+
+  padding: 0;
+
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+
+  border: 0;
+}
+
 body {
   display: flex;
   align-items: center;
@@ -704,7 +725,7 @@ body {
 .main__card-bg {
   position: absolute;
   top: 100px;
-  left: -100%;
+  left: -5000px;
   right: 50%;
 
   width: 500vw;
@@ -1187,7 +1208,7 @@ body {
 
   width: 5000px;
   min-width: 100%;
-  height: 100%;
+  height: 102%;
 
   background-color: var(--light-grey-color);
 }
@@ -1300,10 +1321,13 @@ body {
   display: flex;
   flex-direction: column;
   align-content: center;
-  justify-content: center;
   align-items: stretch;
-
   width: 100%;
+  /* margin-top: 98px; */
+  margin-bottom: 225px;
+  height: 100vh;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
 }
 
 .main__catalog-filter-main-top {
