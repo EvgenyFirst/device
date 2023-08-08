@@ -211,6 +211,8 @@ body {
 .header__link {
   position: relative;
 
+  width: min-content;
+
   margin-left: 60px;
 
   z-index: 1;
@@ -1141,7 +1143,6 @@ body {
   margin-left: auto;
 
   padding-left: 119px;
-
 }
 
 .main__gadgets-list {
@@ -1687,6 +1688,12 @@ body {
 }
 .main__catalog-filter-main-top-price-item:hover .main__catalog-filter-main-top-price-new {
   z-index: 0;
+}
+.main__catalog-filter-main-top-price-item:focus .main__catalog-filter-main-top-price-wrap-hover {
+  display: block;
+}
+.main__catalog-filter-main-top-price-item:active .main__catalog-filter-main-top-price-wrap-hover {
+  display: block;
 }
 
 .main__catalog-filter-main-top-price-wrap-top {
