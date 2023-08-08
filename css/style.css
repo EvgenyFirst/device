@@ -1382,7 +1382,7 @@ body {
   width: 24px;
   height: 24px;
 
-  background-image: url("/img/checkbox-off.svg");
+  background-image: url("../img/checkbox-off.svg");
 }
 .main__catalog-filter-color-ul-li-input:hover {
   cursor: pointer;
@@ -1395,7 +1395,7 @@ body {
   width: 24px;
   height: 24px;
 
-  background-image: url("/img/checkbox-on.svg");
+  background-image: url("../img/checkbox-on.svg");
 }
 
 .main__catalog-filter-color-ul-li-input:hover {
@@ -1424,7 +1424,7 @@ body {
   width: 24px;
   height: 24px;
 
-  background-image: url("/img/radio-off.svg");
+  background-image: url("../img/radio-off.svg");
 }
 .main__catalog-filter-bluetooth-ul-li-input:hover {
   cursor: pointer;
@@ -1437,7 +1437,7 @@ body {
   width: 24px;
   height: 24px;
 
-  background-image: url("/img/radio-on.svg");
+  background-image: url("../img/radio-on.svg");
 }
 
 .main__catalog-filter-color-ul-li-label {
