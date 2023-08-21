@@ -595,6 +595,15 @@ body {
 
   text-decoration: none;
 }
+.header__slider-inner-add-link:hover .header__slider-inner-add-link-special-one {
+  min-height: 40px;
+}
+.header__slider-inner-add-link:active .header__slider-inner-add-link-special-one {
+  min-height: 40px;
+}
+.header__slider-inner-add-link:active .header__slider-inner-add-link-special-two {
+  opacity: 0.3;
+}
 
 .header__slider-inner-add-link-special-one {
   position: absolute;
@@ -753,6 +762,24 @@ body {
   letter-spacing: 0.05em;
   color: var(--black-color);
 }
+.main__devices-link-container:hover .main__devices-link-wrapper {
+  background-color: var(--yellow-color);
+}
+.main__devices-link-container:active .main__devices-link-wrapper {
+  background-color: var(--yellow-color);
+}
+.main__devices-link-container:active .main__devices-link-wrapper img {
+  opacity: 0.3;
+}
+.main__devices-link-container:active .main__devices-link-container-p {
+  opacity: 0.3;
+}
+.main__devices-link-container:focus .main__devices-link-wrapper img {
+  opacity: 0.3;
+}
+.main__devices-link-container:focus .main__devices-link-container-p {
+  opacity: 0.3;
+}
 
 .main__devices-link-wrapper {
   display: flex;
@@ -849,6 +876,9 @@ body {
 }
 .main__card-container-button:hover {
   cursor: pointer;
+}
+.main__card-container-button:hover .main__card-container-button-special {
+  min-height: 40px;
 }
 
 .main__card-container-button-add {
