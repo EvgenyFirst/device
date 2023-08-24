@@ -1000,6 +1000,7 @@ body {
 .main__partners-li {
   padding-right: 1px;
   padding-left: 1px;
+  position: relative;
 }
 .main__partners-li:first-child {
   padding-right: 1px;
@@ -1008,6 +1009,54 @@ body {
 .main__partners-li:last-child {
   padding-right: 0;
   padding-left: 1px;
+}
+
+.main__partners-logo-dji-link:hover,
+.main__partners-logo-dji-link:focus {
+  display: block;
+
+  margin-top: -1px;
+
+  width: 260px;
+  height: 100px;
+
+  background-image: url("../img/logo_dji-color.svg");
+}
+
+.main__partners-logo-sp-gadgets:hover,
+.main__partners-logo-sp-gadgets:focus {
+  display: block;
+
+  margin-top: -4px;
+
+  width: 260px;
+  height: 100px;
+
+  background-image: url("../img/logo_sp-gadgets-color.svg");
+}
+
+.main__partners-logo-gopro-link:hover,
+.main__partners-logo-gopro-link:focus {
+  display: block;
+
+  margin-top: -4px;
+
+  width: 260px;
+  height: 100px;
+
+  background-image: url("../img/logo_gopro-color.svg");
+}
+
+.main__partners-logo-vive-link:hover,
+.main__partners-logo-vive-link:focus {
+  display: block;
+
+  margin-top: -1px;
+
+  width: 260px;
+  height: 100px;
+
+  background-image: url("../img/logo_vive-color.svg");
 }
 /* Партнеры end */
 /* ____ */
