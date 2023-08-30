@@ -518,6 +518,14 @@ body {
   padding-left: 10px;
 }
 
+.header__slider-container-slide-3 {
+  margin-right: -44px;
+  margin-left: -39px;
+
+  padding-top: 100px;
+  padding-left: 0;
+}
+
 .header__slider-inner {
   display: flex;
   justify-content: space-between;
@@ -558,6 +566,9 @@ body {
 
   margin-top: -320px;
   margin-left: 101px;
+}
+.header__slider-inner-add-3 {
+  margin-left: 18px;
 }
 
 .header__slider-inner-add-text-1 {
@@ -692,10 +703,41 @@ body {
   width: 74px;
 }
 
-.header__set-button input:hover {
+.header__set-btn {
+  width: 0;
+  height: 0;
+}
+.header__set-btn:hover {
   cursor: pointer;
+
+  position: relative;
+}
+.header__set-btn:after {
+  content: " ";
+
+  display: block;
+
+  position: relative;
+
+  width: 12px;
+  height: 12px;
+
+  background-image: url("../img/slider-radio-empty.svg");
+}
+.header__set-btn:checked:before {
+  content: " ";
+
+  display: block;
+
+  position: absolute;
+
+  width: 12px;
+  height: 12px;
+
+  background-image: url("../img/slider-radio-checked.svg");
 }
 /* Слайдер end */
+s
 /* ____ */
 /* ____ */
 /* Сердцевина start */
@@ -869,6 +911,7 @@ body {
   align-items: center;
 
   width: 100%;
+  min-height: 40px;
 
   border: none;
 
@@ -1150,8 +1193,18 @@ body {
 
   width: 260px;
 }
-.main__about-container-link:hover {
+.main__about-container-link:hover .main__about-container-link-special {
   cursor: pointer;
+
+  min-height: 40px;
+}
+.main__about-container-link:active .main__about-container-link-special {
+  cursor: pointer;
+
+  min-height: 40px;
+}
+.main__about-container-link:focus .main__about-container-link-special-p {
+  opacity: 0.3;
 }
 
 .main__about-container-link-left {
@@ -1173,6 +1226,7 @@ body {
 
   z-index: 1;
 }
+
 .main__about-container-link-special-p {
   display: flex;
   justify-content: center;

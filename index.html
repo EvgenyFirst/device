@@ -98,7 +98,8 @@
       <article class="header__slider">
         <h1 class="visually-hidden">Слайдер с карточками товаров</h1>
         <!-- Слайд 1 start -->
-        <div class="header__slider-container">
+        <div
+          class="header__slider-container header__slider-one">
           <img class="header__slider-container-slide-1" src="img/slider-1-1.png"
             width="385" height="486" alt="Селфи палки">
           <div class="header__slider-wrapper">
@@ -154,31 +155,34 @@
         </div>
         <!-- Слайд 1 end -->
         <!-- Слайд 2 start -->
-        <div class="header__slider-hidden">
-          <img src="#" alt="Селфи палки">
-          <div>
-            <div>
+        <div
+          class="header__slider-container header__slider-two header__slider-hidden">
+          <img class="header__slider-container-slide-2" src="img/slider-2-1.png"
+            width="345" height="483" alt="Селфи палки">
+          <div class="header__slider-wrapper">
+            <div class="header__slider-inner">
               <span></span>
               <p>
                 02
               </p>
             </div>
-            <div>
-              <p>
+            <div class="header__slider-inner-add">
+              <p class="header__slider-inner-add-text-1">
                 Худеем<br>
                 правильно!
               </p>
-              <p>
+              <p class="header__slider-inner-add-text-2">
                 Мотивирующие фитнес-браслеты помогут найти в себе силы<br>
                 не пропускать занятия и соблюдать диету.
               </p>
-              <a href="blank.html">
-                подробнее
+              <a class="header__slider-inner-add-link" href="blank.html">
+                <span class="header__slider-inner-add-link-special-one"></span>
+                <span class="header__slider-inner-add-link-special-two">подробнее</span>
               </a>
             </div>
-            <div>
-              <div>
-                <p>
+            <div class="header__slider-inner-add-info">
+              <div class="header__slider-wrapper-add">
+                <p class="header__slider-wrapper-add-top">
                   48 часов
                 </p>
                 <p>
@@ -190,44 +194,51 @@
         </div>
         <!-- Слайд 2 end -->
         <!-- Слайд 3 start -->
-        <div class="header__slider-hidden">
-          <img src="#" alt="Селфи палки">
-          <div>
-            <div>
+        <div
+          class="header__slider-container header__slider-three header__slider-hidden">
+          <img class="header__slider-container-slide-3" src="img/slider-3-1.png"
+            width="526" height="334" alt="Селфи палки">
+          <div class="header__slider-wrapper">
+            <div class="header__slider-inner">
               <span></span>
               <p>
                 03
               </p>
             </div>
-            <div>
-              <p>
+            <div class="header__slider-inner-add">
+              <p class="header__slider-inner-add-text-1">
                 Порхает как бабочка,<br>
                 жалит как пчела!
               </p>
-              <p>
+              <p class="header__slider-inner-add-text-2">
                 Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
                 мощным лазером, замаскированным под стандартную камеру.
               </p>
-              <a href="blank.html">
-                подробнее
+              <a class="header__slider-inner-add-link" href="blank.html">
+                <span class="header__slider-inner-add-link-special-one"></span>
+                <span class="header__slider-inner-add-link-special-two">подробнее</span>
               </a>
             </div>
-            <div>
-              <div>
-                <p>
+            <div class="header__slider-inner-add-info">
+              <div class="header__slider-wrapper-add">
+                <p class="header__slider-wrapper-add-top">
                   800 м
                 </p>
-                <p>
+                <p class="header__slider-wrapper-add-bottom">
                   Дальность полета
                 </p>
               </div>
-              <div>
-                <p>
+              <div class="header__slider-wrapper-add
+              header__slider-wrapper-add-set">
+                <p class="header__slider-wrapper-add-top">
                   50 м
                 </p>
-                <p>
+                <p class="header__slider-wrapper-add-bottom">
                   Радиус поражения
                 </p>
+              </div>
+              <div class="header__slider-wrapper-add
+              header__slider-wrapper-add-set">
               </div>
             </div>
           </div>
@@ -235,9 +246,12 @@
         <!-- Слайд 3 end -->
         <!-- Кнопки для слайдера start -->
         <div class="header__set-button">
-          <input type="radio" name="slider-gadget" checked>
-          <input type="radio" name="slider-gadget">
-          <input type="radio" name="slider-gadget">
+          <input class="header__set-btn header__set-button-one" type="radio"
+            name="slider-gadget" checked>
+          <input class="header__set-btn header__set-button-two" type="radio"
+            name="slider-gadget">
+          <input class="header__set-btn header__set-button-three" type="radio"
+            name="slider-gadget">
         </div>
         <!-- Кнопки для слайдера end -->
       </article>
@@ -319,23 +333,34 @@
                 <li class="main__card-container-li">
                   <button class="main__card-container-button
                     main__card-container-button-add
-                    main__card-container-button-active" type="button">
-                    <span class="main__card-container-button-special
+                    main__card-container-button-active main__card-button-one"
+                    type="button">
+                    <span
+                      class="main__card-container-button-special main__card-button-special-one
                       main__card-container-button-special-active"></span>
-                    <span class="main__card-container-button-special-p
+                    <span
+                      class="main__card-container-button-special-p main__card-container-button-special-p-one
                       main__card-container-button-special-p-active">доставка</span>
                   </button>
                 </li>
                 <li class="main__card-container-li">
-                  <button class="main__card-container-button" type="button">
-                    <span class="main__card-container-button-special"></span>
-                    <span class="main__card-container-button-special-p">гарантия</span>
+                  <button
+                    class="main__card-container-button main__card-button-two"
+                    type="button">
+                    <span
+                      class="main__card-container-button-special main__card-button-special-two"></span>
+                    <span
+                      class="main__card-container-button-special-p main__card-container-button-special-p-two">гарантия</span>
                   </button>
                 </li>
                 <li class="main__card-container-li">
-                  <button class="main__card-container-button" type="button">
-                    <span class="main__card-container-button-special"></span>
-                    <span class="main__card-container-button-special-p">
+                  <button
+                    class="main__card-container-button main__card-button-three"
+                    type="button">
+                    <span
+                      class="main__card-container-button-special main__card-button-special-three"></span>
+                    <span
+                      class="main__card-container-button-special-p main__card-container-button-special-p-three">
                       кредит
                     </span>
                   </button>
@@ -343,9 +368,12 @@
               </ul>
             </div>
             <div class="main__card-container-right">
-              <div class="main__card-container-slide">
+              <!-- Доставка -->
+              <div
+                class="main__card-container-slide main__card-slide-one">
                 <div class="main__card-container-inner">
-                  <p class="main__card-container-inner-p-main">
+                  <p
+                    class="main__card-container-inner-p-main main__card-container-inner-p-main-one">
                     Доставка
                   </p>
                   <p class="main__card-container-inner-p-article">
@@ -361,36 +389,43 @@
                     alt="Доставщик">
                 </div>
               </div>
-              <div class="main__card-hidden">
-                <div>
-                  <p>
+              <!-- Гарантия -->
+              <div
+                class="main__card-container-slide main__card-hidden main__card-slide-two">
+                <div class="main__card-container-inner">
+                  <p
+                    class="main__card-container-inner-p-main main__card-container-inner-p-main-two">
                     Гарантия
                   </p>
-                  <p>
+                  <p class="main__card-container-inner-p-article">
                     Если из-за возгорания купленного у нас товара
                     у вас сгорит дом —<br>
                     не переживайте, мы выдадим вам новый.<br>
                     Товар, не дом, конечно же.
                   </p>
                 </div>
-                <div>
-                  <img src="img/guarantee.svg" width="171" height="195"
+                <div class="main__card-container-inner">
+                  <img class="main__card-container-inner-img"
+                    src="img/guarantee.svg" width="171" height="195"
                     alt="Гарантия">
                 </div>
               </div>
-              <div class="main__card-hidden">
-                <div>
-                  <p>
+              <!-- Кредит -->
+              <div class="main__card-container-slide main__card-slide-three main__card-hidden">
+                <div class="main__card-container-inner">
+                  <p
+                    class="main__card-container-inner-p-main main__card-container-inner-p-main-three">
                     Кредит
                   </p>
-                  <p>
+                  <p class="main__card-container-inner-p-article">
                     Залезть в долговую яму стало проще! Кредитные консультанты<br>
                     подберут для вас наиболее выгодные<br>
                     условия кредита. Выгодные для нашего банка, разумеется.
                   </p>
                 </div>
-                <div>
-                  <img src="img/credit_1.svg" width="156" height="188"
+                <div class="main__card-container-inner">
+                  <img class="main__card-container-inner-img"
+                    src="img/credit_1.svg" width="156" height="188"
                     alt="Кредит">
                 </div>
               </div>
@@ -406,25 +441,29 @@
         <ul class="main__partners-ul">
           <li class="main__partners-li">
             <a class="main__partners-logo-dji-link" href="blank.html">
-              <img class="main__partners-logo main__partners-logo-dji" src="img/logo_dji.svg"
+              <img class="main__partners-logo main__partners-logo-dji"
+                src="img/logo_dji.svg"
                 width="260" height="100" alt="dji">
             </a>
           </li>
           <li class="main__partners-li">
             <a class="main__partners-logo-sp-gadgets" href="blank.html">
-              <img class="main__partners-logo main__partners-logo-sp-gadgets" src="img/logo_sp-gadgets.svg"
+              <img class="main__partners-logo main__partners-logo-sp-gadgets"
+                src="img/logo_sp-gadgets.svg"
                 width="260" height="100" alt="SP Gadgets">
             </a>
           </li>
           <li class="main__partners-li">
             <a class="main__partners-logo-gopro-link" href="blnak.html">
-              <img class="main__partners-logo main__partners-logo-gopro" src="img/logo_gopro.svg"
+              <img class="main__partners-logo main__partners-logo-gopro"
+                src="img/logo_gopro.svg"
                 width="260" height="100" alt="GoPro">
             </a>
           </li>
           <li class="main__partners-li">
             <a class="main__partners-logo-vive-link" href="blnak.html">
-              <img class="main__partners-logo main__partners-logo-vive" src="img/logo_vive.svg"
+              <img class="main__partners-logo main__partners-logo-vive"
+                src="img/logo_vive.svg"
                 width="260"
                 height="100" alt="Vive">
             </a>
@@ -493,7 +532,7 @@
             </p>
           </div>
           <div class="main__about-container-right-map">
-            <a href="blank,html">
+            <a href="blank.html">
               <img src="img/map.jpg" width="560" height="222" alt="Карта">
             </a>
           </div>
@@ -606,7 +645,7 @@
 
     <script type="text/javascript" src="js/slider-header.js"></script>
     <script type="text/javascript" src="js/slider-price.js"></script>
-    <script type="text/javascript" src="js/ about.jss"></script>
+    <script type="text/javascript" src="js/about.js"></script>
     <script type="text/javascript" src="js/modal.js"></script>
 
   </body>
