@@ -6,9 +6,9 @@ var changeOneButton = document.querySelector(".header__slider-one");
 var changeTwoButton = document.querySelector(".header__slider-two");
 var changeThreeButton = document.querySelector(".header__slider-three");
 
-var changeSlideOne = document.querySelector(".header__set-button-one");
-var changeSlideTwo = document.querySelector(".header__set-button-two");
-var changeSlideThree = document.querySelector(".header__set-button-three");
+const changeSlideOne = document.querySelector(".header__set-button-one");
+const changeSlideTwo = document.querySelector(".header__set-button-two");
+const changeSlideThree = document.querySelector(".header__set-button-three");
 
 // Открывает слайд 1 start
 changeSlideOne.addEventListener("click", function () {
