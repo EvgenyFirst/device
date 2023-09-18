@@ -24,6 +24,13 @@ changePriceSlideOne.addEventListener("click", function () {
   changePriceTwoButton.classList.add("main__card-hidden");
   changePriceThreeButton.classList.add("main__card-hidden");
 
+  changePriceOneButtonAdd.classList.add("main__card-container-button-special-active");
+  changePriceOneButtonAddOne.classList.add("main__card-container-button-special-p-active");
+  changePriceTwoButtonAdd.classList.add("main__card-container-button-special");
+  changePriceTwoButtonAddTwo.classList.remove("main__card-container-button-special-p-active");
+  changePriceThreeButtonAdd.classList.add("main__card-container-button-special");
+  changePriceThreeButtonAddThree.classList.remove("main__card-container-button-special-p-active");
+
   changePriceSlideOne.classList.add("main__card-container-button-active");
   changePriceSlideTwo.classList.remove("main__card-container-button-active");
   changePriceSlideThree.classList.remove("main__card-container-button-active");
@@ -36,10 +43,12 @@ changePriceSlideTwo.addEventListener("click", function () {
   changePriceTwoButton.classList.remove("main__card-hidden");
   changePriceThreeButton.classList.add("main__card-hidden");
 
-  changePriceTwoButtonAdd.classList.remove("main__card-container-button-special");
-  changePriceTwoButtonAddTwo.classList.add("main__card-container-button-special-p-active");
   changePriceOneButtonAdd.classList.remove("main__card-container-button-special-active");
   changePriceOneButtonAddOne.classList.remove("main__card-container-button-special-p-active");
+  changePriceTwoButtonAdd.classList.remove("main__card-container-button-special");
+  changePriceTwoButtonAddTwo.classList.add("main__card-container-button-special-p-active");
+  changePriceThreeButtonAdd.classList.add("main__card-container-button-special");
+  changePriceThreeButtonAddThree.classList.remove("main__card-container-button-special-p-active");
 
   changePriceSlideOne.classList.remove("main__card-container-button-active");
   changePriceSlideTwo.classList.add("main__card-container-button-active");
@@ -53,10 +62,12 @@ changePriceSlideThree.addEventListener("click", function () {
   changePriceTwoButton.classList.add("main__card-hidden");
   changePriceThreeButton.classList.remove("main__card-hidden");
 
-  changePriceThreeButtonAdd.classList.remove("main__card-container-button-special");
-  changePriceThreeButtonAddThree.classList.add("main__card-container-button-special-p-active");
   changePriceOneButtonAdd.classList.remove("main__card-container-button-special-active");
   changePriceOneButtonAddOne.classList.remove("main__card-container-button-special-p-active");
+  changePriceTwoButtonAdd.classList.add("main__card-container-button-special");
+  changePriceTwoButtonAddTwo.classList.remove("main__card-container-button-special-p-active");
+  changePriceThreeButtonAdd.classList.remove("main__card-container-button-special");
+  changePriceThreeButtonAddThree.classList.add("main__card-container-button-special-p-active");
 
   changePriceSlideOne.classList.remove("main__card-container-button-active");
   changePriceSlideTwo.classList.remove("main__card-container-button-active");
