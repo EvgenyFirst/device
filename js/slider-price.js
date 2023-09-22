@@ -18,7 +18,7 @@ var changePriceSlideOne = document.querySelector(".main__card-button-one");
 var changePriceSlideTwo = document.querySelector(".main__card-button-two");
 var changePriceSlideThree = document.querySelector(".main__card-button-three");
 
-// Открывает слайд 1 start
+// Открывает слайд, меняя стили по стайлгайду других слайдов 1 start
 changePriceSlideOne.addEventListener("click", function () {
   changePriceOneButton.classList.remove("main__card-hidden");
   changePriceTwoButton.classList.add("main__card-hidden");
@@ -35,9 +35,9 @@ changePriceSlideOne.addEventListener("click", function () {
   changePriceSlideTwo.classList.remove("main__card-container-button-active");
   changePriceSlideThree.classList.remove("main__card-container-button-active");
 });
-// Открывает слайд 1 end
+// Открывает, меняя стили по стайлгайду других слайдов слайд 1 end
 
-// Открывает слайд 2 start
+// Открывает, меняя стили по стайлгайду других слайдов слайд 2 start
 changePriceSlideTwo.addEventListener("click", function () {
   changePriceOneButton.classList.add("main__card-hidden");
   changePriceTwoButton.classList.remove("main__card-hidden");
@@ -54,9 +54,9 @@ changePriceSlideTwo.addEventListener("click", function () {
   changePriceSlideTwo.classList.add("main__card-container-button-active");
   changePriceSlideThree.classList.remove("main__card-container-button-active");
 });
-// Открывает слайд 2 end
+// Открывает, меняя стили по стайлгайду других слайдов слайд 2 end
 
-// Открывает слайд 3 start
+// Открывает, меняя стили по стайлгайду других слайдов слайд 3 start
 changePriceSlideThree.addEventListener("click", function () {
   changePriceOneButton.classList.add("main__card-hidden");
   changePriceTwoButton.classList.add("main__card-hidden");
@@ -73,4 +73,4 @@ changePriceSlideThree.addEventListener("click", function () {
   changePriceSlideTwo.classList.remove("main__card-container-button-active");
   changePriceSlideThree.classList.add("main__card-container-button-active");
 });
-// Открывает слайд 3 end
+// Открывает, меняя стили по стайлгайду других слайдов слайд 3 end

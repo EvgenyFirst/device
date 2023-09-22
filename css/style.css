@@ -12,8 +12,10 @@
   --light-grey-color: #ebebeb;
   --grey-color: #c4c4c4;
   --rgba-light-grey-color: rgba(238, 238, 238, 0.7);
-  --special-yellow-color: #f7e296;
   --yellow-color: #f0c52e;
+  --special-yellow-color: #f7e296;
+  --rgba-special-light-yellow-color: rgba(247, 226, 150, 0.5);
+  --rgba-special-lighter-yellow-color: rgba(240, 197, 46, 0.3);
   --dark-yellow-color: #ffc600;
   --white-color: #ffffff;
   --rgba-light-white-color: rgba(255, 255, 255, 0.7);
@@ -182,6 +184,8 @@ html {
 }
 
 body {
+  position: relative;
+
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -736,8 +740,11 @@ body {
 
   background-image: url("../img/slider-radio-checked.svg");
 }
+
+.header__set-button-default-cursor:hover {
+  cursor: default;
+}
 /* Слайдер end */
-s
 /* ____ */
 /* ____ */
 /* Сердцевина start */
@@ -932,6 +939,9 @@ s
   min-height: 40px;
 
   background-color: var(--black-color);
+}
+.main__card-container-button-active:hover {
+  cursor: default;
 }
 
 .main__card-container-button-special {
@@ -1530,10 +1540,6 @@ s
   height: 24px;
 
   background-image: url("../img/checkbox-on.svg");
-}
-
-.main__catalog-filter-color-ul-li-input:hover {
-  cursor: pointer;
 }
 
 .main__catalog-filter-bluetooth-ul {
@@ -2247,5 +2253,104 @@ s
   color: var(--white-color);
 }
 /* Подвел end */
+/* ____ */
+/* ____ */
+/* Модальные окна start */
+/* Модальное окно "О нас" start */
+.modal__map {
+  display: none;
+
+  width: 994px;
+  min-height: 593px;
+
+  position: fixed;
+
+  bottom: 329px;
+
+  z-index: 2;
+
+  background: url("../img/map-big.jpg") var(--dark-grey-color);
+}
+
+.modal__map-opened {
+  display: block;
+}
+
+.modal__map-container {
+  width: 994px;
+  min-height: 593px;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal__map-bitton-close {
+  position: absolute;
+  top: 29px;
+  right: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 55px;
+  height: 55px;
+
+  flex-shrink: 0;
+
+  border: 0;
+  border-radius: 50%;
+
+  background-color: var(--rgba-special-light-yellow-color);
+
+  z-index: 1;
+}
+.modal__map-bitton-close:hover {
+  cursor: pointer;
+
+  background-color: var(--yellow-color);
+}
+.modal__map-bitton-close:active {
+  background-color: var(--yellow-color);
+}
+.modal__map-bitton-close:focus {
+  background-color: var(--rgba-special-lighter-yellow-color);
+}
+.modal__map-bitton-close::after {
+  content: " ";
+
+  display: block;
+
+  position: absolute;
+
+  width: 25px;
+  height: 2px;
+
+  transform: rotate(45deg);
+
+  background-color: var(--rgba-light-white-color);
+}
+.modal__map-bitton-close::before {
+  content: " ";
+
+  display: block;
+
+  position: absolute;
+
+  width: 25px;
+  height: 2px;
+
+  transform: rotate(-45deg);
+
+  background-color: var(--rgba-light-white-color);
+}
+/* Модальное окно "О нас" end */
+/* ____ */
+/* Модальное окно "Контакты" start */
+/* Модальное окно "Контакты" end */
+/* Модальные окна end */
 /* ____ */
 /* ____ */
