@@ -11,7 +11,8 @@
   --dark-grey-color: #363636;
   --light-grey-color: #ebebeb;
   --grey-color: #c4c4c4;
-  --rgba-light-grey-color: rgba(238, 238, 238, 0.7);
+  --rgba-light-grey-color: rgba(0, 0, 0, 0.15);
+  --rgba-lighter-grey-color: rgba(238, 238, 238, 0.7);
   --yellow-color: #f0c52e;
   --special-yellow-color: #f7e296;
   --rgba-special-light-yellow-color: rgba(247, 226, 150, 0.5);
@@ -1841,7 +1842,7 @@ body {
   min-width: 360px;
   min-height: 381px;
 
-  background: var(--rgba-light-grey-color);
+  background: var(--rgba-lighter-grey-color);
 }
 
 .main__catalog-filter-main-top-price-new {
@@ -1862,7 +1863,7 @@ body {
   width: 360px;
   min-height: 381px;
 
-  background-color: var(--rgba-light-grey-color);
+  background-color: var(--rgba-lighter-grey-color);
 }
 
 .main__catalog-filter-main-top-price-wrap-hover-inner {
@@ -2287,7 +2288,7 @@ body {
   justify-content: center;
 }
 
-.modal__map-bitton-close {
+.modal__map-button-close {
   position: absolute;
   top: 29px;
   right: 30px;
@@ -2295,6 +2296,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  font-size: 0;
 
   width: 55px;
   height: 55px;
@@ -2308,18 +2311,18 @@ body {
 
   z-index: 1;
 }
-.modal__map-bitton-close:hover {
+.modal__map-button-close:hover {
   cursor: pointer;
 
   background-color: var(--yellow-color);
 }
-.modal__map-bitton-close:active {
+.modal__map-utton-close:active {
   background-color: var(--yellow-color);
 }
-.modal__map-bitton-close:focus {
+.modal__map-button-close:focus {
   background-color: var(--rgba-special-lighter-yellow-color);
 }
-.modal__map-bitton-close::after {
+.modal__map-button-close::after {
   content: " ";
 
   display: block;
@@ -2333,7 +2336,7 @@ body {
 
   background-color: var(--rgba-light-white-color);
 }
-.modal__map-bitton-close::before {
+.modal__map-button-close::before {
   content: " ";
 
   display: block;
@@ -2350,6 +2353,117 @@ body {
 /* Модальное окно "О нас" end */
 /* ____ */
 /* Модальное окно "Контакты" start */
+.modal__contacts {
+  display: none;
+
+  width: 960px;
+  min-height: 550px;
+
+  flex-shrink: 0;
+
+  background-color: var(--white-color);
+  box-shadow: 0 10px 16px 0 var(--rgba-light-grey-color);
+
+  position: fixed;
+  bottom: 335px;
+
+  z-index: 2;
+}
+
+.modal__contacts-container {
+  display: flex;
+  flex-direction: row;
+  align-items: top;
+  justify-content: space-between;
+}
+
+.modal__contacts-inside-container {
+  width: 100%;
+
+  padding-top: 92px;
+  padding-right: 100px;
+  padding-bottom: 69px;
+  padding-left: 100px;
+}
+
+.modal__contacts-container-input {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.modal__contacts-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__contacts-button-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 0;
+
+  width: 55px;
+  height: 55px;
+
+  flex-shrink: 0;
+
+  border: 0;
+  border-radius: 50%;
+
+  background-color: var(--rgba-special-light-yellow-color);
+
+  z-index: 1;
+}
+.modal__contacts-button-close:hover {
+  cursor: pointer;
+
+  background-color: var(--yellow-color);
+}
+.modal__contacts-button-close:active {
+  background-color: var(--yellow-color);
+}
+.modal__contacts-button-close:focus {
+  background-color: var(--rgba-special-lighter-yellow-color);
+}
+.modal__contacts-button-close::after {
+  content: " ";
+
+  display: block;
+
+  position: absolute;
+
+  width: 25px;
+  height: 2px;
+
+  transform: rotate(45deg);
+
+  background-color: var(--rgba-light-white-color);
+}
+.modal__contacts-button-close::before {
+  content: " ";
+
+  display: block;
+
+  position: absolute;
+
+  width: 25px;
+  height: 2px;
+
+  transform: rotate(-45deg);
+
+  background-color: var(--rgba-light-white-color);
+}
+
+.modal__contacts-opened {
+  display: block;
+}
 /* Модальное окно "Контакты" end */
 /* Модальные окна end */
 /* ____ */

@@ -246,7 +246,9 @@
         <!-- Слайд 3 end -->
         <!-- Кнопки для слайдера start -->
         <div class="header__set-button">
-          <input class="header__set-button-one header__set-button-default-cursor header__set-btn" type="radio"
+          <input
+            class="header__set-button-one header__set-button-default-cursor header__set-btn"
+            type="radio"
             name="slider-gadget" checked>
           <input class="header__set-button-two header__set-btn" type="radio"
             name="slider-gadget">
@@ -533,12 +535,12 @@
             </p>
           </div>
           <div class="main__about-container-right-map">
-            <a class="main__about-right-map" href="blank.html">
+            <a class="main__about-right-map-link" href="blank.html">
               <img src="img/map.jpg" width="560" height="222" alt="Карта">
             </a>
           </div>
           <div class="main__about-container-link-right">
-            <a class="main__about-container-link" href="blank.html">
+            <a class="main__about-container-link main__about-container-link-go" href="blank.html">
               <span class="main__about-container-link-special"></span>
               <span class="main__about-container-link-special-p">
                 напишите нам
@@ -639,7 +641,7 @@
     <!-- Подвал end -->
     <!-- -->
     <!-- Модальные окна start -->
-    <!-- Модальное окно "О нас" start -->
+    <!-- Модальное окно "Карта" start -->
     <section class="modal__map">
       <div class="modal__map-container">
         <!-- OpenStreetMap -->
@@ -656,26 +658,51 @@
           width="974" height="573" style="border:0;" allowfullscreen
           loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <!-- GoogleMap -->
-        <button class="modal__map-bitton-close"></button>
+        <button class="modal__map-button-close">Закрыть</button>
       </div>
     </section>
-    <!-- Модальное окно "О нас" end -->
+    <!-- Модальное окно "Карта" end -->
     <!-- Модальное окно "Контакты" start -->
-    <section>
-
+    <section class="modal__contacts">
+      <div class="modal__contacts-container">
+        <h2 class="visually-hidden">
+          Форма отправки письма
+        </h2>
+        <form class="modal__contacts-inside-container"
+          action="https://echo.htmlacademy.ru" method="post">
+          <div class="modal__contacts-container-input">
+            <p class="modal__contacts-input">
+              <label class="" for="user-name">Ваше имя:</label>
+              <input class="" id="user-name" type="text" name="userName"
+                placeholder="Имя Фамилия" tabindex="0">
+            </p>
+            <p class="modal__contacts-input">
+              <label class="" for="user-e-mail">Ваш e-mail:</label>
+              <input class="" id="user-e-mail" type="email" name="userEmail"
+                placeholder="email@example.com" tabindex="0">
+            </p>
+          </div>
+          <p class="modal__contacts-input">
+            <label class="" for="user-text">Текст письма:</label>
+            <input class="" id="user-text" type="text" name="userText"
+              placeholder="В свободной форме" tabindex="0">
+          </p>
+          <div class="">
+            <button class="" id="button" type="submit" tabindex="0">Отправить</button>
+          </div>
+        </form>
+        <div class>
+          <button class="modal__contacts-button-close" type="button" tabindex="0">Закрыть</button>
+        </div>
+      </div>
     </section>
     <!-- Модальное окно "Контакты" end -->
-    <!-- Модальное окно "Карта" start -->
-    <section>
-
-    </section>
-    <!-- Модальное окно "Карта" end -->
     <!-- Модальные окна end -->
 
     <script type="text/javascript" src="js/slider-header.js"></script>
     <script type="text/javascript" src="js/slider-price.js"></script>
-    <script type="text/javascript" src="js/contact-modal.js"></script>
     <script type="text/javascript" src="js/map-popup.js"></script>
+    <script type="text/javascript" src="js/contact-modal.js"></script>
 
   </body>
 </html>

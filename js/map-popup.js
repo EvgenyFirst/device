@@ -1,16 +1,15 @@
 "use strict";
 
-/* Здесь код модального окна на главной странице при клике на карту над кнопкой "Напишите нам"
-редактровать еще*/
+/* Здесь код модального окна на главной странице при клике на карту над кнопкой "Напишите нам"*/
 
-const buttonOpenTheMap = document.querySelector(".main__about-right-map");
+const buttonOpenTheMap = document.querySelector(".main__about-right-map-link");
 var modalMap = document.querySelector(".modal__map");
-var closemodalMap = document.querySelector(".modal__map-bitton-close");
+var closeModalMap = document.querySelector(".modal__map-button-close");
 
 buttonOpenTheMap.addEventListener("click", function (linkGoDefault) {
   linkGoDefault.preventDefault(), modalMap.classList.add("modal__map-opened");
 }),
-closemodalMap.addEventListener("click", function (linkGoDefault) {
+closeModalMap.addEventListener("click", function (linkGoDefault) {
   linkGoDefault.preventDefault(), modalMap.classList.remove("modal__map-opened");
   }),
   window.addEventListener("keydown", function (linkGoDefault) {
