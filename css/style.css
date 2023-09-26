@@ -2356,7 +2356,7 @@ body {
 /* ____ */
 /* Модальное окно "Контакты" start */
 .modal__contacts {
-  display: block;
+  display: none;
 
   width: 960px;
   min-height: 550px;
