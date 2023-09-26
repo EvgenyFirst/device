@@ -540,7 +540,8 @@
             </a>
           </div>
           <div class="main__about-container-link-right">
-            <a class="main__about-container-link main__about-container-link-go" href="blank.html">
+            <a class="main__about-container-link main__about-container-link-go"
+              href="blank.html">
               <span class="main__about-container-link-special"></span>
               <span class="main__about-container-link-special-p">
                 напишите нам
@@ -672,27 +673,43 @@
           action="https://echo.htmlacademy.ru" method="post">
           <div class="modal__contacts-container-input">
             <p class="modal__contacts-input">
-              <label class="" for="user-name">Ваше имя:</label>
-              <input class="" id="user-name" type="text" name="userName"
-                placeholder="Имя Фамилия" tabindex="0">
+              <label
+                class="modal__contacts-input-head modal__contacts-input-head-add"
+                for="user-name">Ваше имя:</label>
+              <input
+                class="modal__contacts-input-placeholder modal__contacts-input-placeholder-add"
+                id="user-name" type="text" name="userName"
+                placeholder="Имя Фамилия" tabindex="0" required>
             </p>
             <p class="modal__contacts-input">
-              <label class="" for="user-e-mail">Ваш e-mail:</label>
-              <input class="" id="user-e-mail" type="email" name="userEmail"
-                placeholder="email@example.com" tabindex="0">
+              <label
+                class="modal__contacts-input-head modal__contacts-input-head-add"
+                for="user-e-mail">Ваш e-mail:</label>
+              <input
+                class="modal__contacts-input-placeholder modal__contacts-input-placeholder-add"
+                id="user-e-mail" type="email" name="userEmail"
+                placeholder="email@example.com" tabindex="0" required>
             </p>
           </div>
           <p class="modal__contacts-input">
-            <label class="" for="user-text">Текст письма:</label>
-            <input class="" id="user-text" type="text" name="userText"
-              placeholder="В свободной форме" tabindex="0">
+            <label class="modal__contacts-input-head" for="user-text">Текст
+              письма:</label>
+            <textarea
+              class="modal__contacts-input-placeholder modal__contacts-input-placeholder-add-free"
+              id="user-text" type="text" name="userText"
+              placeholder="В свободной форме" tabindex="0"></textarea>
           </p>
-          <div class="">
-            <button class="" id="button" type="submit" tabindex="0">Отправить</button>
+          <div>
+            <button id="button" type="submit" tabindex="0"
+              class="modal__contacts-btn-send">
+              <span class="modal__contacts-btn-send-special-one"></span>
+              <span class="modal__contacts-btn-send-special-two">Отправить</span>
+            </button>
           </div>
         </form>
-        <div class>
-          <button class="modal__contacts-button-close" type="button" tabindex="0">Закрыть</button>
+        <div>
+          <button class="modal__contacts-button-close" type="button"
+            tabindex="0">Закрыть</button>
         </div>
       </div>
     </section>

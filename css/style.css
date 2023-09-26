@@ -3,12 +3,13 @@
 /* Главные настройки start */
 :root {
   --black-color: #000000;
-  --rgba-lighter-black-color: rgba(0, 0, 0, 0.3);
   --rgba-light-black-color: rgba(0, 0, 0, 0.25);
+  --rgba-lighter-black-color: rgba(0, 0, 0, 0.3);
   --rgba-very-light-black-color: rgba(0, 0, 0, 0.6);
   --light-grey-color: #e5e5e5;
   --lighter-grey-color: #dcdcdc;
   --dark-grey-color: #363636;
+  --rgba-dark-grey-color: rgba(0, 0, 0, 0.4);
   --light-grey-color: #ebebeb;
   --grey-color: #c4c4c4;
   --rgba-light-grey-color: rgba(0, 0, 0, 0.15);
@@ -19,6 +20,7 @@
   --rgba-special-lighter-yellow-color: rgba(240, 197, 46, 0.3);
   --dark-yellow-color: #ffc600;
   --white-color: #ffffff;
+  --light-white-color: #f2f2f2;
   --rgba-light-white-color: rgba(255, 255, 255, 0.7);
   --rgba-lighter-white-color: rgba(255, 255, 255, 0.3);
   --light-green-color: #91c92f;
@@ -69,7 +71,7 @@
   font-family: var(--font-montserrat);
   font-style: normal;
   font-weight: 400;
-  /* Браузер сначала попробует найти шрифт локально */
+  /* Браузер сначала попробует найти шрифт локально (аналог для Gilroy) */
   src:
     local("MontserratBlack"),
     url("../fonts/Montserrat/static/Montserrat-Black.ttf") format("ttf");
@@ -2354,7 +2356,7 @@ body {
 /* ____ */
 /* Модальное окно "Контакты" start */
 .modal__contacts {
-  display: none;
+  display: block;
 
   width: 960px;
   min-height: 550px;
@@ -2391,11 +2393,56 @@ body {
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
+
+  margin-bottom: 32px;
 }
 
 .modal__contacts-input {
   display: flex;
   flex-direction: column;
+}
+
+.modal__contacts-input-head {
+  color: var(--black-color);
+  font-family: var(--font-montserrat);
+  font-size: 18px;
+  font-weight: 800;
+
+  padding-bottom: 5px;
+}
+
+.modal__contacts-input-head-add {
+  width: 360px;
+  min-height: auto;
+}
+
+.modal__contacts-input-placeholder {
+  margin-top: 5px;
+
+  border: none;
+
+  background-color: var(--light-white-color);
+}
+.modal__contacts-input-placeholder::placeholder {
+  color: var(--rgba-dark-grey-color);
+  font-family: var(--font-open-sans);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.modal__contacts-input-placeholder-add {
+  padding-top: 16px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+}
+
+.modal__contacts-input-placeholder-add-free {
+  width: 100%;
+  min-height: auto;
+
+  padding-top: 16px;
+  padding-bottom: 132px;
+  padding-left: 20px;
 }
 
 .modal__contacts-button-close {
@@ -2464,6 +2511,63 @@ body {
 .modal__contacts-opened {
   display: block;
 }
+
+.modal__contacts-btn-send {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  max-width: 220px;
+
+  margin-top: 43px;
+  margin-bottom: 57px;
+
+  text-decoration: none;
+
+  border: none;
+
+  background: none;
+}
+.modal__contacts-btn-send:hover {
+  cursor: pointer;
+}
+.modal__contacts-btn-send:hover .modal__contacts-btn-send-special-one {
+  min-height: 40px;
+}
+.modal__contacts-btn-send:active .modal__contacts-btn-send-special-one {
+  min-height: 40px;
+}
+.modal__contacts-btn-send:active .modal__contacts-btn-send-special-two {
+  opacity: 0.3;
+}
+
+.modal__contacts-btn-send-special-one {
+  position: absolute;
+
+  width: 220px;
+  height: 8px;
+
+  background: var(--special-yellow-color);
+
+  z-index: 1;
+}
+
+.modal__contacts-btn-send-special-two {
+  font-family: var(--font-montserrat);
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+
+  color: var(--black-color);
+
+  z-index: 2;
+}
+
 /* Модальное окно "Контакты" end */
 /* Модальные окна end */
 /* ____ */
