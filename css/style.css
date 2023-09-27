@@ -255,6 +255,8 @@ body {
 .header__container-inner {
   display: flex;
   justify-content: space-between;
+
+  filter: drop-shadow(0 4px 0 var(--rgba-light-black-color));
 }
 
 .header__container-inner-hover {
@@ -275,6 +277,10 @@ body {
   background-color: var(--special-yellow-color);
 
   z-index: 2;
+}
+
+.header__container-inner-hover-blnk-cat {
+  margin-top: -48px;
 }
 
 .header__container-inner-hover-on {

@@ -1,6 +1,6 @@
 "use strict";
 
-/* Здесь код, открывающий скрытое меню в шапке при наведении */
+/* Здесь код, открывающий и закрывающий скрытое (изначально) меню в шапке при наведении */
 
 const linkMenuHover = document.querySelector(".header__container-inner-bottom-link");
 var changeMenuHoverHeader = document.querySelector(".header__container-inner-hover");
