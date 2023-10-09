@@ -2375,7 +2375,6 @@ body {
 .modal__contacts-container {
   display: flex;
   flex-direction: row;
-  align-items: top;
   justify-content: space-between;
 }
 
@@ -2393,17 +2392,47 @@ body {
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
+
+  margin-bottom: 26px;
 }
 
 .modal__contacts-input {
   display: flex;
   flex-direction: column;
+
+  width: 360px;
+  min-height: 82px;
+
+  flex-shrink: 0;
+
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.modal__contacts-input-for {
+  color: var(--black-color);
+  font-family: var(--font-montserrat);
+  font-size: 18px;
+  font-weight: 800;
+
+  margin-bottom: 10px;
+}
+
+.modal__contacts-input-free-text {
+  width: 100%;
+
+  margin-bottom: 5px;
 }
 
 .modal__contacts-input-id {
   background-color: var(--special-light-grey-color);
 
   border: none;
+
+  width: 360px;
+  min-height: 50px;
+
+  flex-shrink: 0;
 }
 .modal__contacts-input-id:hover {
   background-color: var(--special-grey-color);
@@ -2415,6 +2444,24 @@ body {
 }
 .modal__contacts-input-id:focus::placeholder {
   color: var(--dark-grey-color);
+
+  padding-left: 20px;
+}
+.modal__contacts-input-id::placeholder {
+  padding-left: 20px;
+}
+
+.modal__contacts-input-id-free-text {
+  width: 100%;
+  min-height: 167px;
+
+  padding-top: 16px;
+
+  flex-shrink: 0;
+}
+
+.modal__contacts-container-button-send {
+  margin-top: 49px;
 }
 
 .modal__contacts-button-close {
@@ -2478,6 +2525,64 @@ body {
   transform: rotate(-45deg);
 
   background-color: var(--rgba-light-white-color);
+}
+
+.modal__contacts-button-send {
+  position: relative;
+
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+
+  width: 260px;
+
+  border: none;
+
+  background: none;
+}
+.modal__contacts-button-send:hover {
+  cursor: pointer;
+}
+.modal__contacts-button-send:hover .modal__contacts-button-send-special {
+  min-height: 40px;
+}
+.modal__contacts-button-send:active .modal__contacts-button-send-special {
+  min-height: 40px;
+}
+.modal__contacts-button-send:focus .modal__contacts-button-send-special-p {
+  opacity: 0.3;
+}
+
+.modal__contacts-button-send-special {
+  position: absolute;
+  left: 0;
+
+  width: 260px;
+  height: 8px;
+
+  background: var(--special-yellow-color);
+
+  z-index: 1;
+}
+
+.modal__contacts-button-send-special-p {
+  display: flex;
+  justify-content: center;
+
+  width: 260px;
+
+  font-family: var(--font-montserrat);
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--black-color);
+
+  margin-left: -3px;
+
+  z-index: 2;
 }
 
 .modal__contacts-opened {

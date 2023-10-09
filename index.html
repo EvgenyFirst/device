@@ -258,6 +258,49 @@
         <!-- Кнопки для слайдера end -->
       </article>
       <!-- Slider end -->
+      <!-- Скрытое (изначально) меню в шапке start -->
+      <div>
+        <nav
+          class="header__container-inner header__container-inner-hover header__container-inner-hover-blnk-cat">
+          <ul class="header__container-inner-hover-ul">
+            <li class="header__container-inner-hover-li">
+              <a class="header__container-inner-hover-li-link" href="blank.html">
+                Виртуальная реальность
+              </a>
+            </li>
+            <li class="header__container-inner-hover-li">
+              <a class="header__container-inner-hover-li-link" href="blank.html">
+                Моноподы для селфи
+              </a>
+            </li>
+            <li class="header__container-inner-hover-li">
+              <a class="header__container-inner-hover-li-link" href="blank.html">
+                Экшн-камеры
+              </a>
+            </li>
+          </ul>
+          <ul class="header__container-inner-hover-ul">
+            <li class="header__container-inner-hover-li">
+              <a class="header__container-inner-hover-li-link" href="blank.html">
+                Фитнес-браслеты
+              </a>
+            </li>
+            <li class="header__container-inner-hover-li">
+              <a class="header__container-inner-hover-li-link" href="blank.html">
+                Умные часы
+              </a>
+            </li>
+          </ul>
+          <ul class="header__container-inner-hover-ul">
+            <li class="header__container-inner-hover-li">
+              <a class="header__container-inner-hover-li-link" href="blank.html">
+                Квадрокоптер
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Скрытое (изначально) меню в шапке end -->
     </header>
     <!-- Шапка end -->
     <main class="main">
@@ -540,7 +583,8 @@
             </a>
           </div>
           <div class="main__about-container-link-right">
-            <a class="main__about-container-link main__about-container-link-go" href="blank.html">
+            <a class="main__about-container-link main__about-container-link-go"
+              href="blank.html">
               <span class="main__about-container-link-special"></span>
               <span class="main__about-container-link-special-p">
                 напишите нам
@@ -673,26 +717,38 @@
           <div class="modal__contacts-container-input">
             <p class="modal__contacts-input">
               <label class="modal__contacts-input-for" for="user-name">Ваше имя:</label>
-              <input class="modal__contacts-input-id" id="user-name" type="text" name="userName"
+              <input class="modal__contacts-input-id" id="user-name" type="text"
+                name="userName"
                 placeholder="Имя Фамилия" tabindex="0" required>
             </p>
             <p class="modal__contacts-input">
-              <label class="modal__contacts-input-for" for="user-e-mail">Ваш e-mail:</label>
-              <input class="modal__contacts-input-id" id="user-e-mail" type="email" name="userEmail"
+              <label class="modal__contacts-input-for" for="user-e-mail">Ваш
+                e-mail:</label>
+              <input class="modal__contacts-input-id" id="user-e-mail"
+                type="email" name="userEmail"
                 placeholder="email@example.com" tabindex="0" required>
             </p>
           </div>
-          <p class="modal__contacts-input">
-            <label class="" for="user-text">Текст письма:</label>
-            <input class="modal__contacts-input-id" id="user-text" type="text" name="userText"
-              placeholder="В свободной форме" tabindex="0">
+          <p class="modal__contacts-input modal__contacts-input-free-text">
+            <label class="modal__contacts-input-for" for="user-text">Текст
+              письма:</label>
+            <textarea
+              class="modal__contacts-input-id modal__contacts-input-id-free-text"
+              name="userText" id="user-text" cols="1" rows="1"
+              placeholder="В свободной форме" tabindex="0"></textarea>
           </p>
-          <div class="">
-            <button class="" id="button" type="submit" tabindex="0" onclick="checkValidateForm()">Отправить</button>
+          <div class="modal__contacts-container-button-send">
+            <button class="modal__contacts-button-send" id="button"
+              type="submit" tabindex="0" onclick="checkValidateForm()">
+              <span class="modal__contacts-button-send-special"></span>
+              <span class="modal__contacts-button-send-special-p">
+                Отправить</button>
+            </a>
           </div>
         </form>
         <div class>
-          <button class="modal__contacts-button-close" type="button" tabindex="0">Закрыть</button>
+          <button class="modal__contacts-button-close" type="button"
+            tabindex="0">Закрыть</button>
         </div>
       </div>
     </section>
