@@ -12,6 +12,9 @@ linkMenuHover.onmouseover = function () {
 linkMenuHover.onmouseout = function () {
   changeMenuHoverHeader.classList.add("header__container-inner-hover-on");
 };
+linkMenuHover.addEventListener("focus", function () {
+  changeMenuHoverHeader.classList.add("header__container-inner-hover-on");
+});
 changeMenuHoverHeaderGlobal.addEventListener("click", function () {
   changeMenuHoverHeader.classList.remove("header__container-inner-hover-on");
 });

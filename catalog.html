@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="ru">
+<html lang="ru" class="html">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=0">
@@ -36,7 +36,8 @@
               <input class="header__container-input" type="search"
                 id="find-in-site" placeholder="Поиск по сайту">
               <label for="find-in-site"></label>
-              <button class="header__container-form-btn-add" type="submit" tabindex="1">
+              <button class="header__container-form-btn-add" type="submit"
+                tabindex="1">
                 <span>Найти</span>
               </button>
             </form>
@@ -70,7 +71,7 @@
           </div>
         </nav>
         <nav class="header__container-inner-bottom">
-          <a class="header__container-inner-bottom-link" href="catalog.html">
+          <a class="header__container-inner-bottom-link header__container-inner-bottom-link-cat" tabindex="0">
             каталог товаров
             <img class="header__container-inner-bottom-link-plus"
               src="img/icon_plus.svg" width="22" height="22" alt="Символ плюс">
@@ -96,6 +97,49 @@
           </div>
         </nav>
       </div>
+      <!-- Скрытое (изначально) меню в шапке start -->
+      <div>
+        <nav
+          class="header__container-inner header__container-inner-hover header__container-inner-hover-blnk-cat">
+          <ul class="header__container-inner-hover-ul">
+            <li class="header__container-inner-hover-li">
+              <a class="header__container-inner-hover-li-link" href="blank.html">
+                Виртуальная реальность
+              </a>
+            </li>
+            <li class="header__container-inner-hover-li">
+              <a class="header__container-inner-hover-li-link" href="blank.html">
+                Моноподы для селфи
+              </a>
+            </li>
+            <li class="header__container-inner-hover-li">
+              <a class="header__container-inner-hover-li-link" href="blank.html">
+                Экшн-камеры
+              </a>
+            </li>
+          </ul>
+          <ul class="header__container-inner-hover-ul">
+            <li class="header__container-inner-hover-li">
+              <a class="header__container-inner-hover-li-link" href="blank.html">
+                Фитнес-браслеты
+              </a>
+            </li>
+            <li class="header__container-inner-hover-li">
+              <a class="header__container-inner-hover-li-link" href="blank.html">
+                Умные часы
+              </a>
+            </li>
+          </ul>
+          <ul class="header__container-inner-hover-ul">
+            <li class="header__container-inner-hover-li">
+              <a class="header__container-inner-hover-li-link" href="blank.html">
+                Квадрокоптер
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Скрытое (изначально) меню в шапке end -->
     </header>
     <!--  -->
     <main class="main">
@@ -315,7 +359,8 @@
                 </div>
               </div>
               <ul class="main__catalog-filter-main-top-price">
-                <li class="main__catalog-filter-main-top-price-item" tabindex="0">
+                <li class="main__catalog-filter-main-top-price-item"
+                  tabindex="0">
                   <div class="main__catalog-filter-main-top-price-wrap-top">
                     <img src="img/selfie-junior.jpg" width="360" height="360"
                       alt="Любительская селфи-палка">
@@ -353,7 +398,8 @@
                     </p>
                   </div>
                 </li>
-                <li class="main__catalog-filter-main-top-price-item" tabindex="0">
+                <li class="main__catalog-filter-main-top-price-item"
+                  tabindex="0">
                   <div class="main__catalog-filter-main-top-price-wrap-top">
                     <img src="img/selfie-prof.jpg" width="360" height="360"
                       alt="Профессиональная селфи-палка">
@@ -391,7 +437,8 @@
                     </p>
                   </div>
                 </li>
-                <li class="main__catalog-filter-main-top-price-item" tabindex="0">
+                <li class="main__catalog-filter-main-top-price-item"
+                  tabindex="0">
                   <div class="main__catalog-filter-main-top-price-wrap-top">
                     <img src="img/selfie-not-water.jpg" width="360"
                       height="360" alt="Непотопляемая селфи-палка">
@@ -429,7 +476,8 @@
                     </p>
                   </div>
                 </li>
-                <li class="main__catalog-filter-main-top-price-item" tabindex="0">
+                <li class="main__catalog-filter-main-top-price-item"
+                  tabindex="0">
                   <div class="main__catalog-filter-main-top-price-wrap-top">
                     <img src="img/selfie-follow-me.jpg" width="360"
                       height="360" alt="Селфи-палка «Следуй за мной»">
@@ -508,6 +556,7 @@
       </section>
     </main>
     <!--  -->
+    <!-- Подвал start -->
     <footer class="footer">
       <div class="footer__bg">
         <div class="footer__container">
@@ -553,10 +602,8 @@
                 </li>
               </ul>
             </div>
-            <!--  footer__container-wrap-right-catalog-->
             <div class="footer__container-wrap-right
               footer__container-wrap-right-catalog">
-              <!--  footer__container-wrap-right-ul-catalog-->
               <ul class="footer__container-wrap-right-ul
                 footer__container-wrap-right-ul-catalog">
                 <li class="footer__container-wrap-right-li">
@@ -600,5 +647,9 @@
         </div>
       </div>
     </footer>
+    <!-- Подвал end -->
   </body>
+
+  <script type="text/javascript" src="js/hover-menu-header.js"></script>
+
 </html>
