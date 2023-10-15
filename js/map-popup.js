@@ -12,8 +12,8 @@ buttonOpenTheMap.addEventListener("click", function (linkGoDefault) {
 closeModalMap.addEventListener("click", function (linkGoDefault) {
   linkGoDefault.preventDefault(), modalMap.classList.remove("modal__map-opened");
   }),
-  window.addEventListener("keydown", function (linkGoDefault) {
-    27 === linkGoDefault.keyCode &&
-      modalMap.classList.contains("modal__map-opened") &&
-      (linkGoDefault.preventDefault(), modalMap.classList.remove("modal__map-opened"));
-  });
+window.addEventListener("keydown", function (linkGoDefault) {
+  27 === linkGoDefault.keyCode &&
+    modalMap.classList.contains("modal__map-opened") &&
+    (linkGoDefault.preventDefault(), modalMap.classList.remove("modal__map-opened"));
+});
