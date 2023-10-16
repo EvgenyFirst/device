@@ -3,17 +3,17 @@
 /* Здесь код модального окна обратной связи на главной странице при клике на кнопку "Напишите нам"*/
 
 /* Открыть и закрыть форму обратной связи start */
-const buttonOpenContacts = document.querySelector(
-  ".main__about-container-link-go"
-);
+const buttonOpenContacts = document.querySelector(".main__about-container-link-go");
 var modalContacts = document.querySelector(".modal__contacts");
-var closeModalContacts = document.querySelector(
-  ".modal__contacts-button-close"
-);
+var closeModalContacts = document.querySelector(".modal__contacts-button-close");
+
+var userName = document.getElementById("user-name");
+var userPassword = document.getElementById("user-e-mail");
 
 buttonOpenContacts.addEventListener("click", function (goDefault) {
   goDefault.preventDefault(),
     modalContacts.classList.add("modal__contacts-opened");
+  userName.focus();
 }),
   closeModalContacts.addEventListener("click", function (goDefault) {
     goDefault.preventDefault(),
@@ -28,10 +28,8 @@ buttonOpenContacts.addEventListener("click", function (goDefault) {
 /* Открыть и закрыть форму обратной связи end */
 
 /* Валидация полей start */
-function checkValidateForm() {
-  var userName = document.getElementById("user-name");
-  var userPassword = document.getElementById("user-e-mail");
 
+function checkValidateForm() {
   if (!userName.value) {
     userName.style.background = "#f6dada";
   } else {
@@ -44,4 +42,5 @@ function checkValidateForm() {
     userPassword.style.background = "#ffffff";
   }
 }
+
 /* Валидация полей  end */

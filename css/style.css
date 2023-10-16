@@ -594,6 +594,8 @@ body {
 .header__slider-container {
   display: flex;
   justify-content: space-between;
+  min-height: 560px;
+  flex-shrink: 0;
 }
 
 .header__slider-container-slide-1 {
@@ -2120,18 +2122,17 @@ body {
 
   display: flex;
   justify-content: center;
+  flex: 1;
 
   width: 100%;
   min-height: 324px;
 
   margin-top: 84px;
-
-  flex: 1;
 }
 
 .footer__bg {
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
 
   width: 500vw;
   min-height: 324px;
@@ -2336,6 +2337,14 @@ body {
 /* ____ */
 /* Модальные окна start */
 /* Модальное окно "О нас" start */
+.modal {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .modal__map {
   display: none;
 
@@ -2509,6 +2518,8 @@ body {
   min-height: 50px;
 
   flex-shrink: 0;
+
+  padding-left: 20px;
 }
 .modal__contacts-input-id:hover {
   background-color: var(--special-grey-color);
@@ -2520,11 +2531,6 @@ body {
 }
 .modal__contacts-input-id:focus::placeholder {
   color: var(--dark-grey-color);
-
-  padding-left: 20px;
-}
-.modal__contacts-input-id::placeholder {
-  padding-left: 20px;
 }
 
 .modal__contacts-input-id-free-text {

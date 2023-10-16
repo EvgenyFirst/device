@@ -19,9 +19,9 @@
 
   <body>
     <header class="header">
-      <h1 class="visually-hidden"
+      <h2 class="visually-hidden"
         style="font-size: 30px; font-weight: bold; font-style: italic;">Шапка
-        сайта</h1>
+        сайта</h2>
       <a class="header__link" href="index.html" tabindex="0">
         <img class="header__link-logo" src="img/logo.svg" width="163"
           height="35" alt="Логотип Device">
@@ -74,7 +74,11 @@
             каталог товаров
             <img class="header__container-inner-bottom-link-plus"
               src="img/icon_plus.svg" width="22" height="22" alt="Символ плюс">
-            <a href="catalog.html"></a>
+          </a>
+          <a
+            class="visually-hidden header__container-inner-bottom-link-special"
+            tabindex="0" href="catalog.html">
+            <!-- для доступности сайта при переключении при помощи клавиши tab -->
           </a>
           <div class="header__container-inner-bottom-ul">
             <ul>
@@ -100,9 +104,9 @@
       </div>
       <!-- Скрытое (изначально) меню в шапке start -->
       <div>
-        <h2 class="visually-hidden"
+        <h3 class="visually-hidden"
           style="font-size: 25px; font-weight: bold; font-style: italic;">Меню в
-          шапке сайта</h2>
+          шапке сайта</h3>
         <nav
           class="header__container-inner header__container-inner-hover header__container-inner-hover-blnk-cat">
           <ul class="header__container-inner-hover-ul">
@@ -156,15 +160,13 @@
     </header>
     <!-- Шапка end -->
     <main class="main">
-      <section>
-        <h1>Пустая страница-заглушка</h1>
-      </section>
+      <h2>Пустая страница-заглушка</h2>
     </main>
     <!-- Подвел start -->
     <footer class="footer">
-      <h1 class="visually-hidden"
+      <h2 class="visually-hidden"
         style="font-size: 30px; font-weight: bold; font-style: italic;">Подвел
-        сайта</h1>
+        сайта</h2>
       <div class="footer__bg">
         <div class="footer__container">
           <div class="footer__container-wrap">
@@ -249,8 +251,8 @@
       </div>
     </footer>
     <!-- Подвал end -->
-  </body>
+    <script src="js/hover-menu-header.js"></script>
 
-  <script type="text/javascript" src="js/hover-menu-header.js"></script>
+  </body>
 
 </html>

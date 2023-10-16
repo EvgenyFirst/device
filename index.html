@@ -20,9 +20,9 @@
   <body>
     <!-- Шапка start -->
     <header class="header">
-      <h1 class="visually-hidden"
+      <h2 class="visually-hidden"
         style="font-size: 30px; font-weight: bold; font-style: italic;">Шапка
-        сайта</h1>
+        сайта</h2>
       <a class="header__link">
         <img class="header__link-logo" src="img/logo.svg" width="163"
           height="35" alt="Логотип Device">
@@ -76,6 +76,11 @@
             <img class="header__container-inner-bottom-link-plus"
               src="img/icon_plus.svg" width="22" height="22" alt="Символ плюс">
           </a>
+          <a
+            class="visually-hidden header__container-inner-bottom-link-special"
+            tabindex="0" href="catalog.html">
+            <!-- для доступности сайта при переключении при помощи клавиши tab -->
+          </a>
           <div class="header__container-inner-bottom-ul">
             <ul>
               <li>
@@ -100,9 +105,9 @@
       </div>
       <!-- Скрытое (изначально) меню в шапке start -->
       <div>
-        <h2 class="visually-hidden"
+        <h3 class="visually-hidden"
           style="font-size: 25px; font-weight: bold; font-style: italic;">Меню в
-          шапке сайта</h2>
+          шапке сайта</h3>
         <nav
           class="header__container-inner header__container-inner-hover">
           <ul class="header__container-inner-hover-ul">
@@ -153,16 +158,16 @@
       <!-- Скрытое (изначально) меню в шапке end -->
       <!-- Slider start -->
       <article class="header__slider">
-        <h1 class="visually-hidden"
+        <h2 class="visually-hidden"
           style="font-size: 30px; font-weight: bold; font-style: italic;">Слайдер
-          с карточками товаров</h1>
+          с карточками товаров</h2>
         <!-- Слайд 1 start -->
         <div
           class="header__slider-container header__slider-one">
-          <h2 class="visually-hidden"
+          <h3 class="visually-hidden"
             style="font-size: 25px; font-weight: bold; font-style: italic;">Слайд
             1
-            с карточками товаров</h2>
+            с карточками товаров</h3>
           <img class="header__slider-container-slide-1" src="img/slider-1-1.png"
             width="385" height="486" alt="Селфи палки">
           <div class="header__slider-wrapper">
@@ -220,10 +225,10 @@
         <!-- Слайд 2 start -->
         <div
           class="header__slider-two header__slider-container header__slider-hidden">
-          <h2 class="visually-hidden"
+          <h3 class="visually-hidden"
             style="font-size: 25px; font-weight: bold; font-style: italic;">Слайд
             2
-            с карточками товаров</h2>
+            с карточками товаров</h3>
           <img class="header__slider-container-slide-2" src="img/slider-2-1.png"
             width="345" height="483" alt="Селфи палки">
           <div class="header__slider-wrapper">
@@ -263,10 +268,10 @@
         <!-- Слайд 3 start -->
         <div
           class="header__slider-three header__slider-container header__slider-hidden">
-          <h2 class="visually-hidden"
+          <h3 class="visually-hidden"
             style="font-size: 25px; font-weight: bold; font-style: italic;">Слайд
             3
-            с карточками товаров</h2>
+            с карточками товаров</h3>
           <img class="header__slider-container-slide-3" src="img/slider-3-1.png"
             width="526" height="334" alt="Селфи палки">
           <div class="header__slider-wrapper">
@@ -317,9 +322,9 @@
         <!-- Слайд 3 end -->
         <!-- Кнопки для слайдера start -->
         <div class="header__set-button">
-          <h3 class="visually-hidden"
+          <h4 class="visually-hidden"
             style="font-size: 25px; font-weight: bold; font-style: italic;">Кнопки
-            для слайдера с карточками товаров</h3>
+            для слайдера с карточками товаров</h4>
           <input
             class="header__set-button-one header__set-button-default-cursor header__set-btn"
             type="radio"
@@ -337,9 +342,9 @@
     <main class="main">
       <!-- Устройства start -->
       <section class="main__devices-wrapper">
-        <h1 class="visually-hidden"
+        <h2 class="visually-hidden"
           style="font-size: 30px; font-weight: bold; font-style: italic;">Каталог
-          устройств магазина Device</h1>
+          устройств магазина Device</h2>
         <ul class="main__devices-inner">
           <li class="main__devices-li">
             <a class="main__devices-link-container" href="blank.html">
@@ -401,10 +406,10 @@
       <!-- Устройства end -->
       <!-- Опции start -->
       <section class="main__card">
-        <h1 class="visually-hidden"
+        <h2 class="visually-hidden"
           style="font-size: 30px; font-weight: bold; font-style: italic;">Выбор
           опций для товара — доставка, гарантия,
-          кредит.</h1>
+          кредит.</h2>
         <span class="main__card-bg"></span>
         <div class="main__card-wrapper">
           <div class="main__card-container">
@@ -451,9 +456,9 @@
               <!-- Доставка -->
               <div
                 class="main__card-container-slide main__card-slide-one">
-                <h2 class="visually-hidden"
+                <h3 class="visually-hidden"
                   style="font-size: 25px; font-weight: bold; font-style: italic;">Выбор
-                  опций для товара — доставка</h2>
+                  опций для товара — доставка</h3>
                 <div class="main__card-container-inner">
                   <p
                     class="main__card-container-inner-p-main main__card-container-inner-p-main-one">
@@ -476,9 +481,9 @@
               <div
                 class="main__card-container-slide main__card-hidden main__card-slide-two">
                 <div class="main__card-container-inner">
-                  <h2 class="visually-hidden"
+                  <h3 class="visually-hidden"
                     style="font-size: 25px; font-weight: bold; font-style: italic;">Выбор
-                    опций для товара — гарантия</h2>
+                    опций для товара — гарантия</h3>
                   <p
                     class="main__card-container-inner-p-main main__card-container-inner-p-main-two">
                     Гарантия
@@ -500,9 +505,9 @@
               <div
                 class="main__card-container-slide main__card-slide-three main__card-hidden">
                 <div class="main__card-container-inner">
-                  <h2 class="visually-hidden"
+                  <h3 class="visually-hidden"
                     style="font-size: 25px; font-weight: bold; font-style: italic;">Выбор
-                    опций для товара — кредит</h2>
+                    опций для товара — кредит</h3>
                   <p
                     class="main__card-container-inner-p-main main__card-container-inner-p-main-three">
                     Кредит
@@ -527,9 +532,9 @@
       <!-- Опции end -->
       <!-- Партнеры start -->
       <section class="main__partners">
-        <h1 class="visually-hidden"
+        <h2 class="visually-hidden"
           style="font-size: 30px; font-weight: bold; font-style: italic;">Партнеры
-          магазина Device</h1>
+          магазина Device</h2>
         <ul class="main__partners-ul">
           <li class="main__partners-li">
             <a class="main__partners-logo-dji-link" href="blank.html">
@@ -565,14 +570,14 @@
       <!-- Партнеры end -->
       <!-- О нас и контакты start -->
       <section class="main__about">
-        <h1 class="visually-hidden"
+        <h2 class="visually-hidden"
           style="font-size: 30px; font-weight: bold; font-style: italic;">Информация
-          о нас и наши контакты</h1>
+          о нас и наши контакты</h2>
         <!-- О нас start -->
         <div class="main__about-container-left">
-          <h2 class="visually-hidden"
+          <h3 class="visually-hidden"
             style="font-size: 25px; font-weight: bold; font-style: italic;">О
-            нас</h2>
+            нас</h3>
           <span class="main__about-container-line"></span>
           <div>
             <p class="main__about-container-p-main">
@@ -617,8 +622,8 @@
         <!-- О нас end -->
         <!-- Контакты start -->
         <div class="main__about-container-right">
-          <h2 class="visually-hidden"
-            style="font-size: 25px; font-weight: bold; font-style: italic;">Контакты</h2>
+          <h3 class="visually-hidden"
+            style="font-size: 25px; font-weight: bold; font-style: italic;">Контакты</h3>
           <span class="main__about-container-line"></span>
           <div>
             <p class="main__about-container-p-main">
@@ -652,9 +657,9 @@
     <!--  -->
     <!-- Подвел start -->
     <footer class="footer">
-      <h1 class="visually-hidden"
+      <h2 class="visually-hidden"
         style="font-size: 30px; font-weight: bold; font-style: italic;">Подвел
-        сайта</h1>
+        сайта</h2>
       <div class="footer__bg">
         <div class="footer__container">
           <div class="footer__container-wrap">
@@ -740,88 +745,92 @@
     </footer>
     <!-- Подвал end -->
     <!-- -->
-    <!-- Модальные окна start -->
-    <h1 class="visually-hidden"
-      style="font-size: 30px; font-weight: bold; font-style: italic;">Модальные
-      окна</h1>
-    <!-- Модальное окно "Карта" start -->
-    <section class="modal__map">
+    <section class="modal">
+      <!-- Модальные окна start -->
       <h2 class="visually-hidden"
-        style="font-size: 25px; font-weight: bold; font-style: italic;">Модальное
-        окно "Карта"</h2>
-      <div class="modal__map-container">
-        <!-- OpenStreetMap -->
-        <!--<iframe width="974" height="573"
-          src="https://www.openstreetmap.org/export/embed.html?bbox=37.528111338615425%2C55.686412580561715%2C37.53165185451508%2C55.687785470680076&amp;layer=mapnik&amp;marker=55.687099031646035%2C37.52988159656525"
-          style="border: 1px solid black"></iframe><br /><small><a
-            href="https://www.openstreetmap.org/?mlat=55.68710&amp;mlon=37.52988#map=19/55.68710/37.52988&amp;layers=N">Посмотреть
-            более крупную карту</a></small>-->
-        <!-- OpenStreetMap -->
-        <!-- --- -->
-        <!-- GoogleMap -->
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1123753773163!2d37.52704307719997!3d55.68703399705462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1695102360330!5m2!1sru!2sru"
-          width="974" height="573" style="border:0;" allowfullscreen
-          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <!-- GoogleMap -->
-        <button class="modal__map-button-close">Закрыть</button>
-      </div>
-    </section>
-    <!-- Модальное окно "Карта" end -->
-    <!-- Модальное окно "Контакты" start -->
-    <section class="modal__contacts">
-      <h2 class="visually-hidden"
-        style="font-size: 25px; font-weight: bold; font-style: italic;">Модальное
-        окно "Контакты"</h2>
-      <div class="modal__contacts-container">
-        <form class="modal__contacts-inside-container"
-          action="https://echo.htmlacademy.ru" method="post">
-          <div class="modal__contacts-container-input">
-            <p class="modal__contacts-input">
-              <label class="modal__contacts-input-for" for="user-name">Ваше имя:</label>
-              <input class="modal__contacts-input-id" id="user-name" type="text"
-                name="userName"
-                placeholder="Имя Фамилия" tabindex="0" required>
-            </p>
-            <p class="modal__contacts-input">
-              <label class="modal__contacts-input-for" for="user-e-mail">Ваш
-                e-mail:</label>
-              <input class="modal__contacts-input-id" id="user-e-mail"
-                type="email" name="userEmail"
-                placeholder="email@example.com" tabindex="0" required>
-            </p>
-          </div>
-          <p class="modal__contacts-input modal__contacts-input-free-text">
-            <label class="modal__contacts-input-for" for="user-text">Текст
-              письма:</label>
-            <textarea
-              class="modal__contacts-input-id modal__contacts-input-id-free-text"
-              name="userText" id="user-text" cols="1" rows="1"
-              placeholder="В свободной форме" tabindex="0"></textarea>
-          </p>
-          <div class="modal__contacts-container-button-send">
-            <button class="modal__contacts-button-send" id="button"
-              type="submit" tabindex="0" onclick="checkValidateForm()">
-              <span class="modal__contacts-button-send-special"></span>
-              <span class="modal__contacts-button-send-special-p">
-                Отправить</button>
-            </a>
-          </div>
-        </form>
-        <div class>
-          <button class="modal__contacts-button-close" type="button"
-            tabindex="0">Закрыть</button>
+        style="font-size: 30px; font-weight: bold; font-style: italic;">Модальные
+        окна</h2>
+      <!-- Модальное окно "Карта" start -->
+      <section class="modal__map">
+        <h3 class="visually-hidden"
+          style="font-size: 25px; font-weight: bold; font-style: italic;">Модальное
+          окно "Карта"</h3>
+        <div class="modal__map-container">
+          <!-- OpenStreetMap -->
+          <!--<iframe width="974" height="573"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=37.528111338615425%2C55.686412580561715%2C37.53165185451508%2C55.687785470680076&amp;layer=mapnik&amp;marker=55.687099031646035%2C37.52988159656525"
+        style="border: 1px solid black"></iframe><br /><small><a
+          href="https://www.openstreetmap.org/?mlat=55.68710&amp;mlon=37.52988#map=19/55.68710/37.52988&amp;layers=N">Посмотреть
+          более крупную карту</a></small>-->
+          <!-- OpenStreetMap -->
+          <!-- -->
+          <!-- GoogleMap -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1123753773163!2d37.52704307719997!3d55.68703399705462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1695102360330!5m2!1sru!2sru"
+            width="974" height="573" style="border:0;" allowfullscreen
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <!-- GoogleMap -->
+          <button class="modal__map-button-close">Закрыть</button>
         </div>
-      </div>
+      </section>
+      <!-- Модальное окно "Карта" end -->
+      <!-- Модальное окно "Контакты" start -->
+      <section class="modal__contacts">
+        <h3 class="visually-hidden"
+          style="font-size: 25px; font-weight: bold; font-style: italic;">Модальное
+          окно "Контакты"</h3>
+        <div class="modal__contacts-container">
+          <form class="modal__contacts-inside-container"
+            action="https://echo.htmlacademy.ru" method="post">
+            <div class="modal__contacts-container-input">
+              <p class="modal__contacts-input">
+                <label class="modal__contacts-input-for" for="user-name">Ваше
+                  имя:</label>
+                <input class="modal__contacts-input-id" id="user-name"
+                  type="text"
+                  name="userName"
+                  placeholder="Имя Фамилия" tabindex="0" required>
+              </p>
+              <p class="modal__contacts-input">
+                <label class="modal__contacts-input-for" for="user-e-mail">Ваш
+                  e-mail:</label>
+                <input class="modal__contacts-input-id" id="user-e-mail"
+                  type="email" name="userEmail"
+                  placeholder="email@example.com" tabindex="0" required>
+              </p>
+            </div>
+            <p class="modal__contacts-input modal__contacts-input-free-text">
+              <label class="modal__contacts-input-for" for="user-text">Текст
+                письма:</label>
+              <textarea
+                class="modal__contacts-input-id modal__contacts-input-id-free-text"
+                name="userText" id="user-text" cols="1" rows="1"
+                placeholder="В свободной форме" tabindex="0"></textarea>
+            </p>
+            <div class="modal__contacts-container-button-send">
+              <button class="modal__contacts-button-send" id="button"
+                type="submit" tabindex="0" onclick="checkValidateForm()">
+                <span class="modal__contacts-button-send-special"></span>
+                <span class="modal__contacts-button-send-special-p">Отправить</span>
+              </button>
+            </div>
+          </form>
+          <div>
+            <button class="modal__contacts-button-close" type="button"
+              tabindex="0">Закрыть</button>
+          </div>
+        </div>
+      </section>
+      <!-- Модальное окно "Контакты" end -->
     </section>
-    <!-- Модальное окно "Контакты" end -->
     <!-- Модальные окна end -->
 
-    <script type="text/javascript" src="js/hover-menu-header.js"></script>
-    <script type="text/javascript" src="js/slider-header.js"></script>
-    <script type="text/javascript" src="js/slider-price.js"></script>
-    <script type="text/javascript" src="js/map-popup.js"></script>
-    <script type="text/javascript" src="js/contact-modal.js"></script>
+    <script src="js/hover-menu-header.js"></script>
+    <script src="js/slider-header.js"></script>
+    <script src="js/slider-price.js"></script>
+    <script src="js/map-popup.js"></script>
+    <script src="js/contact-modal.js"></script>
 
   </body>
+
 </html>
