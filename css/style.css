@@ -1712,6 +1712,12 @@ body {
 .main__catalog-filter-left-bottom-btn:hover {
   cursor: pointer;
 }
+.main__catalog-filter-left-bottom-btn:hover .main__catalog-filter-left-bottom-btn-special-one {
+  min-height: 40px;
+}
+.main__catalog-filter-left-bottom-btn:focus .main__catalog-filter-left-bottom-btn-special-one {
+  min-height: 40px;
+}
 .main__catalog-filter-left-bottom-btn-special-one {
   position: absolute;
 
@@ -1740,7 +1746,6 @@ body {
   align-content: center;
   align-items: stretch;
   width: 100%;
-  /* margin-top: 98px; */
   margin-bottom: 225px;
   height: 100vh;
   flex-wrap: nowrap;
@@ -1885,6 +1890,8 @@ body {
   min-width: 360px;
   min-height: 455px;
 
+  text-decoration: none;
+
   margin-top: 16px;
   margin-right: 15px;
   margin-bottom: 2px;
@@ -1913,6 +1920,10 @@ body {
   display: block;
 }
 .main__catalog-filter-main-top-price-item:active .main__catalog-filter-main-top-price-wrap-hover {
+  display: block;
+}
+
+.main__catalog-filter-main-top-price-wrap-hover-on {
   display: block;
 }
 
@@ -1977,7 +1988,12 @@ body {
 .main__catalog-filter-main-top-price-wrap-hover-btn:hover {
   cursor: pointer;
 }
-
+.main__catalog-filter-main-top-price-wrap-hover-btn:hover .main__catalog-filter-main-top-price-wrap-hover-special-one {
+  min-height: 40px;
+}
+.main__catalog-filter-main-top-price-wrap-hover-btn:focus .main__catalog-filter-main-top-price-wrap-hover-special-one {
+  min-height: 40px;
+}
 .main__catalog-filter-main-top-price-wrap-hover-special-one {
   position: absolute;
 
@@ -2016,6 +2032,18 @@ body {
 .main__catalog-filter-main-top-price-wrap-compare:hover {
   cursor: pointer;
 }
+.main__catalog-filter-main-top-price-wrap-compare:hover .main__catalog-filter-price-wrap-compare-style {
+  opacity: 1;
+}
+.main__catalog-filter-main-top-price-wrap-compare:active .main__catalog-filter-price-wrap-compare-style {
+  opacity: 0.2;
+}
+.main__catalog-filter-main-top-price-wrap-compare:focus .main__catalog-filter-price-wrap-compare-style {
+  opacity: 0.2;
+}
+.main__catalog-filter-price-wrap-compare-style {
+  opacity: 0.5;
+}
 
 .main__catalog-filter-main-top-price-new-hidden {
   opacity: 0;
@@ -2026,6 +2054,8 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: flex-start;
+
+  text-decoration: none;
 }
 
 .main__catalog-filter-main-bottom-header {

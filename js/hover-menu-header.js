@@ -32,5 +32,4 @@ headerContainerInnerHoverLiLinkFocus.addEventListener("focus", function () {
 window.addEventListener("keydown", function (closeHoverMenu) {
   27 === closeHoverMenu.keyCode &&
   changeMenuHoverHeader.classList.remove("header__container-inner-hover-on");
-  body.focus();
 });

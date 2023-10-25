@@ -12,19 +12,19 @@ var userPassword = document.getElementById("user-e-mail");
 
 buttonOpenContacts.addEventListener("click", function (goDefault) {
   goDefault.preventDefault(),
-    modalContacts.classList.add("modal__contacts-opened");
+  modalContacts.classList.add("modal__contacts-opened");
   userName.focus();
 }),
-  closeModalContacts.addEventListener("click", function (goDefault) {
-    goDefault.preventDefault(),
-      modalContacts.classList.remove("modal__contacts-opened");
-  }),
-  window.addEventListener("keydown", function (goDefault) {
-    27 === goDefault.keyCode &&
-      modalContacts.classList.contains("modal__contacts-opened") &&
-      (goDefault.preventDefault(),
-      modalContacts.classList.remove("modal__contacts-opened"));
-  });
+closeModalContacts.addEventListener("click", function (goDefault) {
+  goDefault.preventDefault(),
+  modalContacts.classList.remove("modal__contacts-opened");
+}),
+window.addEventListener("keydown", function (goDefault) {
+  27 === goDefault.keyCode &&
+    modalContacts.classList.contains("modal__contacts-opened") &&
+    (goDefault.preventDefault(),
+    modalContacts.classList.remove("modal__contacts-opened"));
+});
 /* Открыть и закрыть форму обратной связи end */
 
 /* Валидация полей start */
