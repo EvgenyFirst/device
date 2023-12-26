@@ -10,6 +10,7 @@
   --light-grey-color: #e5e5e5;
   --lighter-grey-color: #dcdcdc;
   --dark-grey-color: #363636;
+  --darker-grey-color: #d9d9d9;
   --light-grey-color: #ebebeb;
   --grey-color: #c4c4c4;
   --special-grey-color: #eaeaea;
@@ -2225,8 +2226,10 @@ body {
 .main__catalog-paginator {
   list-style: none;
 
-  width: 704px;
+  width: 752px;
   min-height: 70px;
+
+  position: relative;
 
   display: flex;
   justify-content: space-between;
@@ -2235,10 +2238,29 @@ body {
   margin-top: -7px;
   margin-left: 72px;
 
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-right: 0;
+  padding-left: 0;
 
   background-color: var(--light-grey-color);
+}
+
+.main__catalog-paginator-item-away:hover {`
+}
+.main__catalog-paginator-item-away:active {
+  color: var(--rgba-lighter-black-color);
+
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  background-color: var(--darker-grey-color);
+}
+.main__catalog-paginator-item-away:focus {
+  color: var(--rgba-lighter-black-color);
+
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  background-color: var(--darker-grey-color);
 }
 
 .main__catalog-paginator-item-href {
@@ -2249,10 +2271,33 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: var(--black-color);
+
+  width: 120px;
+
+  padding-right: 30px;
+  padding-left: 30px;
+}
+.main__catalog-paginator-item-href:active {
+  color: var(--rgba-lighter-black-color);
+
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  background-color: var(--darker-grey-color);
+}
+.main__catalog-paginator-item-href:focus {
+  color: var(--rgba-lighter-black-color);
+
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  background-color: var(--darker-grey-color);
 }
 
 .main__catalog-paginator-items-inner {
   list-style: none;
+
+  position: relative;
 
   display: flex;
   justify-content: center;
@@ -2281,6 +2326,15 @@ body {
   text-decoration: none;
   color: var(--black-color);
   opacity: 0.30000001192092896;
+}
+.main__catalog-paginator-items-inner-href:hover {
+  opacity: 0.6;
+}
+.main__catalog-paginator-items-inner-href:active {
+  opacity: 1;
+}
+.main__catalog-paginator-items-inner-href:focus {
+  opacity: 1;
 }
 
 .main__catalog-paginator-items-inner-href-active {
