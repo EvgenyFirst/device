@@ -764,7 +764,13 @@ body {
 .header__slider-inner-add-link:active .header__slider-inner-add-link-special-one {
   min-height: 40px;
 }
+.header__slider-inner-add-link:focus .header__slider-inner-add-link-special-one {
+  min-height: 40px;
+}
 .header__slider-inner-add-link:active .header__slider-inner-add-link-special-two {
+  opacity: 0.3;
+}
+.header__slider-inner-add-link:focus .header__slider-inner-add-link-special-two {
   opacity: 0.3;
 }
 
@@ -1235,12 +1241,12 @@ body {
 .main__partners-logo-dji-link:focus {
   display: block;
 
-  margin-top: -1px;
+  margin-top: -5px;
 
   width: 260px;
   height: 100px;
 
-  background-image: url("../img/logo_dji-color.svg");
+  background-image: url("../img/logo-dji-color.svg");
 }
 
 .main__partners-logo-sp-gadgets:hover,
@@ -1252,7 +1258,7 @@ body {
   width: 260px;
   height: 100px;
 
-  background-image: url("../img/logo_sp-gadgets-color.svg");
+  background-image: url("../img/logo-sp-gadgets-color.svg");
 }
 
 .main__partners-logo-gopro-link:hover,
@@ -1264,19 +1270,19 @@ body {
   width: 260px;
   height: 100px;
 
-  background-image: url("../img/logo_gopro-color.svg");
+  background-image: url("../img/logo-gopro-color.svg");
 }
 
 .main__partners-logo-vive-link:hover,
 .main__partners-logo-vive-link:focus {
   display: block;
 
-  margin-top: -1px;
+  margin-top: -5px;
 
   width: 260px;
   height: 100px;
 
-  background-image: url("../img/logo_vive-color.svg");
+  background-image: url("../img/logo-vive-color.svg");
 }
 /* Партнеры end */
 /* ____ */
@@ -1378,6 +1384,9 @@ body {
 .main__about-container-link:active .main__about-container-link-special {
   cursor: pointer;
 
+  min-height: 40px;
+}
+.main__about-container-link:focus .main__about-container-link-special {
   min-height: 40px;
 }
 .main__about-container-link:focus .main__about-container-link-special-p {
@@ -1590,6 +1599,7 @@ body {
   width: 5000px;
   min-width: 100%;
   height: 123%;
+  min-height: 148%;
 
   background-color: var(--light-grey-color);
 }
@@ -1703,6 +1713,14 @@ body {
   width: 0;
   height: 0;
 }
+.main__catalog-filter-color-ul-li-input:disabled {
+  opacity: 0.25;
+}
+.main__catalog-filter-color-ul-li-input:disabled:hover {
+  cursor: default;
+
+  opacity: 0.25;
+}
 .main__catalog-filter-color-ul-li-input::before {
   content: " ";
 
@@ -1715,6 +1733,8 @@ body {
 }
 .main__catalog-filter-color-ul-li-input:hover {
   cursor: pointer;
+
+  opacity: 0.6;
 }
 .main__catalog-filter-color-ul-li-input:checked::before {
   content: " ";
@@ -1740,6 +1760,17 @@ body {
 .main__catalog-filter-bluetooth-ul-li-input {
   width: 0;
   height: 0;
+}
+.main__catalog-filter-bluetooth-ul-li-input:hover {
+  opacity: 0.6;
+}
+.main__catalog-filter-bluetooth-ul-li-input:disabled {
+  opacity: 0.25;
+}
+.main__catalog-filter-bluetooth-ul-li-input:disabled:hover {
+  cursor: default;
+
+  opacity: 0.25;
 }
 .main__catalog-filter-bluetooth-ul-li-input::before {
   content: " ";
@@ -1821,6 +1852,9 @@ body {
 }
 .main__catalog-filter-left-bottom-btn:focus .main__catalog-filter-left-bottom-btn-special-one {
   min-height: 40px;
+}
+.main__catalog-filter-left-bottom-btn:focus .main__catalog-filter-left-bottom-btn-special-two {
+  opacity: 0.3;
 }
 .main__catalog-filter-left-bottom-btn-special-one {
   position: absolute;
@@ -2244,7 +2278,7 @@ body {
   background-color: var(--light-grey-color);
 }
 
-.main__catalog-paginator-item-away:hover {`
+.main__catalog-paginator-item-away:hover {
 }
 .main__catalog-paginator-item-away:active {
   color: var(--rgba-lighter-black-color);
@@ -2274,8 +2308,16 @@ body {
 
   width: 120px;
 
+  padding-top: 27px;
   padding-right: 30px;
+  padding-bottom: 27px;
   padding-left: 30px;
+}
+.main__catalog-paginator-item-href:hover {
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  background-color: var(--darker-grey-color);
 }
 .main__catalog-paginator-item-href:active {
   color: var(--rgba-lighter-black-color);
@@ -2661,7 +2703,7 @@ body {
 
   position: fixed;
 
-  bottom: 112px;
+  bottom: 25px;
 
   z-index: 2;
 
@@ -2759,7 +2801,7 @@ body {
   box-shadow: 0 10px 16px 0 var(--rgba-light-grey-color);
 
   position: fixed;
-  bottom: 130px;
+  bottom: 25px;
 
   background-color: var(--white-color);
 
